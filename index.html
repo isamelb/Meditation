@@ -113,6 +113,10 @@ in order for a person to become happy and enhance quality of life, gratitude sho
 and praticed daily, the video above shows how'
 var how_mind_works ='When a person trains herself in meditation a process of re-patterning \
 of the brain happens, that is why meditation works, watch the video above to learn more'
+var anxiety ='Anxiety is simply a form of fear that has a lingering characteristic, it is a background feeling \
+of unease and suffering, if it lasts for a long time, it can trigger clinical depression, as anxiety is a variant \
+of fear it can be cured with a self love meditation and/or by directing love to the source of anxiety \
+watch the video above for more explanation'
 //var question= document.getElementById("mytext").value;
 function submitquestion(){
   var quest= document.getElementById("mytext").value;
@@ -203,6 +207,11 @@ function submitquestion(){
 }else if (question.includes("mind")||question.includes("neurons")){
   document.getElementById("work").innerHTML = how_mind_works;
   document.getElementById('frametest').src = "https://www.youtube.com/embed/wnnJ3Otw1ek?rel=0";
+  document.getElementById("work").style.color = "red";
+
+}else if (question.includes("anxiety")||question.includes("anxious")){
+  document.getElementById("work").innerHTML = anxiety;
+  document.getElementById('frametest').src = "https://www.youtube.com/embed/K6IIXgEe3V8?rel=0";
   document.getElementById("work").style.color = "red";
 
 }
