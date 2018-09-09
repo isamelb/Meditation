@@ -118,7 +118,8 @@ function submitquestion(){
   var quest= document.getElementById("mytext").value;
   question = quest.toLowerCase();
   if (question.includes("work")){
-    document.getElementById("work").innerHTML = dont_work.fontcolor("green");
+    document.getElementById("work").innerHTML = dont_work;
+    dont_work.fontcolor("green")
     document.getElementById('frametest').src = "https://www.youtube.com/embed/gFdUS0Cm1Fs?rel=0";
 
   }else if (question.includes("saddness")||question.includes("sad")){
