@@ -39,7 +39,7 @@ body {
     <input size = "24" align="middle" type="text" id ="mytext" placeholder="Tell me your feelings"/>
     <button align="middle" id ="ask" onclick ="submitquestion()" type="button" >ask your question </button>
 
-      <p id = "work"><font size="3" color="red">Hi, let me answer your questions about how to enhance your wellbeing</font></p>
+      <p id = "work">Hi, let me answer your questions about how to enhance your wellbeing</p>
       <p>I wrote a paper about how to become happy, you can read it below</p>
     click on image to read: <a href="https://docs.google.com/document/d/1cDZAn_aYELlSWr4FX01mYMTufhhH7WwYAU-Tao3k6Ao/edit?usp=sharing">
 <img border="0" alt="theory" src="./sunsetlogo.jpeg" width="100" height="100">
@@ -120,78 +120,97 @@ function submitquestion(){
   if (question.includes("work")){
     document.getElementById("work").innerHTML = dont_work;
     document.getElementById('frametest').src = "https://www.youtube.com/embed/gFdUS0Cm1Fs?rel=0";
+    document.getElementById("work").style.color = "red";
 
   }else if (question.includes("saddness")||question.includes("sad")){
     document.getElementById("work").innerHTML = saddness;
     document.getElementById('frametest').src = "https://www.youtube.com/embed/_UKDZufwLME?rel=0";
-
+    document.getElementById("work").style.color = "red";
 
 
   }else if (question.includes("love")){
     document.getElementById("work").innerHTML = love;
     document.getElementById('frametest').src = "https://www.youtube.com/embed/bVyr1IF9Cno?rel=0";
+    document.getElementById("work").style.color = "red";
 
 
   }else if (question.includes("want")){
     document.getElementById("work").innerHTML = want;
     document.getElementById('frametest').src = "https://www.youtube.com/embed/WjCPEKY4XZo?rel=0";
+    document.getElementById("work").style.color = "red";
 
   }else if (question.includes("happy")){
     document.getElementById("work").innerHTML = happy;
     document.getElementById('frametest').src = "https://www.youtube.com/embed/bVyr1IF9Cno?rel=0";
+    document.getElementById("work").style.color = "red";
 
   }else if (question.includes("fear")){
     document.getElementById("work").innerHTML = fear;
     document.getElementById('frametest').src = "https://www.youtube.com/embed/Ei1ELU0VSj4?rel=0";
+    document.getElementById("work").style.color = "red";
 
 
   }else if (question.includes("panic")){
     document.getElementById("work").innerHTML = panic;
     document.getElementById('frametest').src ="https://www.youtube.com/embed/ydqVh8VnmOM?rel=0";
+    document.getElementById("work").style.color = "red";
+
   }else if (question.includes("sleep")){
     document.getElementById("work").innerHTML = cant_sleep;
     document.getElementById('frametest').src = "https://www.youtube.com/embed/aEYaxMckgzc?rel=0";
+    document.getElementById("work").style.color = "red";
 
   }else if (question.includes("guilt")){
     document.getElementById("work").innerHTML = guilt;
     document.getElementById('frametest').src = "https://www.youtube.com/embed/g2EmXatLA-w?rel=0";
+    document.getElementById("work").style.color = "red";
 
   }else if (question.includes("boredom")){
   document.getElementById("work").innerHTML = boredom;
   document.getElementById('frametest').src = "https://www.youtube.com/embed/iQd13grg9bE?rel=0";
+  document.getElementById("work").style.color = "red";
 
   }else if (question.includes("suicide")){
   document.getElementById("work").innerHTML = suicide;
   document.getElementById('frametest').src = "https://www.youtube.com/embed/AAyc-SBbHVo?rel=0";
+  document.getElementById("work").style.color = "red";
 
 }else if (question.includes("meditation")||question.includes("meditate")){
   document.getElementById("work").innerHTML = meditation;
   document.getElementById('frametest').src = "https://www.youtube.com/embed/kuyMUGLAixc?rel=0";
+  document.getElementById("work").style.color = "red";
 
 }else if (question.includes("hatred")||question.includes("hate")){
   document.getElementById("work").innerHTML = hatred;
   document.getElementById('frametest').src = "https://www.youtube.com/embed/sSlDjWaAYxc?rel=0";
+  document.getElementById("work").style.color = "red";
 
 }else if (question.includes("who")||question.includes("tell me about yourself")){
   document.getElementById("work").innerHTML = who_are_you;
   document.getElementById('frametest').src = "https://www.youtube.com/embed/q62wiJTqGK4?rel=0";
+  document.getElementById("work").style.color = "red";
 
 }else if (question.includes("relax")||question.includes("tension")){
   document.getElementById("work").innerHTML = relax;
   document.getElementById('frametest').src = "https://www.youtube.com/embed/plWKyXJO8TU?rel=0";
+  document.getElementById("work").style.color = "red";
 
 }else if (question.includes("gratitude")||question.includes("grateful")){
   document.getElementById("work").innerHTML = gratitude;
   document.getElementById('frametest').src = "https://www.youtube.com/embed/XE5gUyfYaLU?rel=0";
+  document.getElementById("work").style.color = "red";
 
 }else if (question.includes("mind")||question.includes("neurons")){
   document.getElementById("work").innerHTML = how_mind_works;
   document.getElementById('frametest').src = "https://www.youtube.com/embed/wnnJ3Otw1ek?rel=0";
+  document.getElementById("work").style.color = "red";
 
 }
 
 else{
     document.getElementById("work").innerHTML = "I am still working on other questions and will soon update the app";
+    document.getElementById("work").style.color = "green";
+
   }
 
 
