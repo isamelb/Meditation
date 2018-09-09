@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript">
+
+
+    </script>
+    <meta charset="UTF-8">
+    <title>Increase your fulfillment in life</title>
+  </head>
+  <body >
+    <style rel='stylesheet' type='text/css'>
+body {
+    background-color:;
+
+}
+        </style>
+        <div style ="text-align: center"  id="content">
+         <img src="/home/isam/electron-apps/new-app/rose.jpeg" align="right" class="ribbon"/>
+         <iframe id = "frametest" width="560" height="315" src="https://www.youtube.com/embed/q62wiJTqGK4?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <img src="/home/isam/electron-apps/new-app/rose.jpeg" align="left" class="ribbon"/>
+         <div>love is what really matters</div>
+        </div>
+    <h1 align ="center">How to reduce mental suffering</h1>
+    <p> This app will try to teach the user mental skills to reduce suffering. you can ask questions,
+    related to emotional well being and meditation and you can ask who are you to
+  get a summary about me</p>
+
+    <input size = "24" align="middle" type="text" id ="mytext" placeholder="Tell me your feelings"/>
+    <button align="middle" id ="ask" onclick ="submitquestion()" type="button" >ask your question </button>
+    <p id = "work">Hi, let me answer your questions about how to enhance your wellbeing</p>
+    <p>If you feel like sponsoring me to keep maintaining this website by adding more content,
+      you can contribute by paypal on the following email: <h4>isamelb@gmail.com</h4>
+      or you can contribute by sending me EOS tokens to <h4>fasterskills</h4> or you can help me by setting up
+      a monthly payment of £10 or £20 on this
+      Barclays account number:
+      Account number: 00972908
+      Sort code     : 206915
+      -Thanks for your help<p>
+
+<script type="text/javascript">
+var dont_work = 'relax, walk in nature and meditate,\
+ dont work too hard learn to enjoy life more, \
+ just be present, don\'t try to be anything special, \
+ just love yourself exactely how you are right now';
+var saddness= 'saddness manifests itself as tension in the upper scalp, massage it vigorously for relief \
+there are two ways to deal with saddness, one physical and one mental: the physical is to locate the area \
+in the upper scalp that is perpetrating the sensations of saddness and massage it, the second is \
+to fully accept it so as not to offer any resistance to it so as relax the body, watch the video above \
+it explains how to deal with it';
+var love='love is the sublime emotion and is the root of all positive emotions, cultivate it for dramatic \
+enhancement of quality of life, watch the video above that explains how \
+you can becomes happier by harnessing th power of love';
+var want='wanting or craving is at the source of all suffering\n, practice gratitude to reduce wanting\n';
+var give='giving is a pleasure and enhances the quality of life \nof both the giver and the taker it what is given is good\n';
+var happy='happiness is an internal state of being, external situations\n have no bearing on the internal state';
+var fear='fear is at the root of all negative emotions, \nit easily being dispensed of by a self love meditation\n';
+var panic='panic attacks are when you start to fear fear itself, \ncure by full acceptance of fear as an emotion, total surrender to present moment cures panic attacks\n';
+var cant_sleep ="if you can't sleep, just be there don\'t resist, just shift your attention \
+from your mind to your body, feel the aliveness of your body \
+keep noticing your body, shift your attention to your breath and just be there once your attention is no \
+longer in your thoughts, sleep comes easily, the video above explains more";
+var guilt ='The emotion of guilt is fear in disguise, it is fear of what others might say or do \
+so we diret this fear towards ourselves to alter behavior and it displays itself as self hatred and guilt \
+to rid yourself of this terrible emotion just do a meditation of self love as explained in the video above';
+var boredom ='Boredom is a really misunderstood emotion, most people attribute boredom to lack of money \
+or lack of available activities, in fact boredom is a type of self hatred and is the result of the feeling \
+of not wanting to be with oneself, it is a fear and we know that love reduces fear and that \
+acceptance is a variant of love, so we accept ourselves fully \
+to reduce boredom as explained in the video above';
+var suicide = 'Thought of self harm or thoughts of suicide can occur in the mind \
+as an attempt to escape from pain and fear, there is many ways to deal with pain and fear \
+and here is one : just love yourself unconditionally, the video above explains more  ';
+var meditation ='Meditation is an ancient practice that has been used to enhance quality of life  \
+and to deal with emotional difficulties for thousands of years, please watch the video above where I \
+explain its benefits and features'
+var hatred ='Hatred is an emotion that is derived from fear and it makes a lot of people suffer uncessarily \
+in short it is cured with love meditation, watch the video for more indepth explanation'
+var who_are_you ='My name is isam elbousserghini, I used to be an engineer and went through a very difficult \
+period of my life where I experienced tremendous mental and emotional pain, \
+I used my engineering skills to develop a way to come out of pain using cognitive methods \
+which I am sharing in this interactive website';
+var relax ='when we are anxious we instinctively tense up our muscles, for most people it is \
+the muscles of the neck and scalp for others it could be in the back or stomach area \
+watch this video above that explains how to deal with tension in the body ';
+var gratitude ='Gratitude is an emotion that is responsible for a lot of happiness \
+in order for a person to become happy and enhance quality of life, gratitude should be cultivated \
+and praticed daily, the video above shows how'
+var how_mind_works ='When a person trains herself in meditation a process of re-patterning \
+of the brain happens, that is why meditation works, watch the video above to learn more'
+//var question= document.getElementById("mytext").value;
+function submitquestion(){
+  var quest= document.getElementById("mytext").value;
+  question = quest.toLowerCase();
+  if (question.includes("work")){
+    document.getElementById("work").innerHTML = dont_work;
+
+  }else if (question.includes("saddness")||question.includes("sad")){
+    document.getElementById("work").innerHTML = saddness;
+    document.getElementById('frametest').src = "https://www.youtube.com/embed/_UKDZufwLME?rel=0";
+
+  
+
+  }else if (question.includes("love")){
+    document.getElementById("work").innerHTML = love;
+    document.getElementById('frametest').src = "https://www.youtube.com/embed/bVyr1IF9Cno?rel=0";
+
+
+  }else if (question.includes("want")){
+    document.getElementById("work").innerHTML = want;
+
+  }else if (question.includes("happy")){
+    document.getElementById("work").innerHTML = happy;
+    document.getElementById('frametest').src = "https://www.youtube.com/embed/bVyr1IF9Cno?rel=0";
+
+  }else if (question.includes("fear")){
+    document.getElementById("work").innerHTML = fear;
+
+  }else if (question.includes("panic")){
+    document.getElementById("work").innerHTML = panic;
+
+  }else if (question.includes("sleep")){
+    document.getElementById("work").innerHTML = cant_sleep;
+    document.getElementById('frametest').src = "https://www.youtube.com/embed/aEYaxMckgzc?rel=0";
+
+  }else if (question.includes("guilt")){
+    document.getElementById("work").innerHTML = guilt;
+    document.getElementById('frametest').src = "https://www.youtube.com/embed/g2EmXatLA-w?rel=0";
+
+  }else if (question.includes("boredom")){
+  document.getElementById("work").innerHTML = boredom;
+  document.getElementById('frametest').src = "https://www.youtube.com/embed/iQd13grg9bE?rel=0";
+
+  }else if (question.includes("suicide")){
+  document.getElementById("work").innerHTML = suicide;
+  document.getElementById('frametest').src = "https://www.youtube.com/embed/AAyc-SBbHVo?rel=0";
+
+}else if (question.includes("meditation")||question.includes("meditate")){
+  document.getElementById("work").innerHTML = meditation;
+  document.getElementById('frametest').src = "https://www.youtube.com/embed/kuyMUGLAixc?rel=0";
+
+}else if (question.includes("hatred")||question.includes("hate")){
+  document.getElementById("work").innerHTML = hatred;
+  document.getElementById('frametest').src = "https://www.youtube.com/embed/sSlDjWaAYxc?rel=0";
+
+}else if (question.includes("who")||question.includes("tell me about yourself")){
+  document.getElementById("work").innerHTML = who_are_you;
+  document.getElementById('frametest').src = "https://www.youtube.com/embed/q62wiJTqGK4?rel=0";
+
+}else if (question.includes("relax")||question.includes("tension")){
+  document.getElementById("work").innerHTML = relax;
+  document.getElementById('frametest').src = "https://www.youtube.com/embed/plWKyXJO8TU?rel=0";
+
+}else if (question.includes("gratitude")||question.includes("grateful")){
+  document.getElementById("work").innerHTML = gratitude;
+  document.getElementById('frametest').src = "https://www.youtube.com/embed/XE5gUyfYaLU?rel=0";
+
+}else if (question.includes("mind")||question.includes("neurons")){
+  document.getElementById("work").innerHTML = how_mind_works;
+  document.getElementById('frametest').src = "https://www.youtube.com/embed/wnnJ3Otw1ek?rel=0";
+
+}
+
+else{
+    document.getElementById("work").innerHTML = "I am still working on other questions and will soon update the app";
+  }
+
+
+
+};
+</script>
+
+
+
+
+  </body>
+</html>
