@@ -39,7 +39,7 @@ body {
     <input size = "24" align="middle" type="text" id ="mytext" placeholder="Tell me your feelings"/>
     <button align="middle" id ="ask" onclick ="submitquestion()" type="button" >ask your question </button>
 
-      <p id = "work">Hi, let me answer your questions about how to enhance your wellbeing</p>
+      <p id = "work"><font size="3" color="red">Hi, let me answer your questions about how to enhance your wellbeing</p>
       <p>I wrote a paper about how to become happy, you can read it below</p>
     click on image to read: <a href="https://docs.google.com/document/d/1cDZAn_aYELlSWr4FX01mYMTufhhH7WwYAU-Tao3k6Ao/edit?usp=sharing">
 <img border="0" alt="theory" src="./sunsetlogo.jpeg" width="100" height="100">
@@ -118,7 +118,6 @@ function submitquestion(){
   var quest= document.getElementById("mytext").value;
   question = quest.toLowerCase();
   if (question.includes("work")){
-    dont_work.fontcolor("green");
     document.getElementById("work").innerHTML = dont_work;
     document.getElementById('frametest').src = "https://www.youtube.com/embed/gFdUS0Cm1Fs?rel=0";
 
