@@ -35,7 +35,7 @@ body {
     <p> This app will try to teach the user mental skills to reduce suffering. you can ask questions,
     related to emotional well being and meditation and you can ask who are you to
     get a summary about me, in this app you can ask about love, fear, anxiety
-    work, saddness,happiness, panic and guilt and uch more</p>
+    work, saddness,happiness, insomnia, boredom, panic and guilt and uch more</p>
 
     <input size = 25 align="middle" type="text" id ="mytext" placeholder="Tell me your feelings"/>
     <button  align="middle" id ="ask" onclick ="submitquestion()" type="button" >ask your question </button>
@@ -173,9 +173,9 @@ function submitquestion(){
     document.getElementById("work").style.color = "red";
 
 
-  }else if (question.includes("sleep")){
+  }else if (question.includes("sleep")||(question.includes("insomnia")){
     document.getElementById("work").innerHTML = cant_sleep;
-    document.getElementById('frametest').src = "https://www.youtube.com/embed/aEYaxMckgzc?rel=0";
+    document.getElementById('frametest').src = "https://www.youtube.com/embed/1oQ0-frVYyM?rel=0";
     document.getElementById("work").style.color = "red";
 
   }else if (question.includes("guilt")){
