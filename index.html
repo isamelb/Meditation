@@ -34,7 +34,8 @@ body {
     <h1 align ="center">How to reduce mental suffering</h1>
     <p> This app will try to teach the user mental skills to reduce suffering. you can ask questions,
     related to emotional well being and meditation and you can ask who are you to
-  get a summary about me</p>
+    get a summary about me, in this app you can ask about love, fear, anxiety
+    work, saddness,happiness, panic and guilt and uch more</p>
 
     <input size = 25 align="middle" type="text" id ="mytext" placeholder="Tell me your feelings"/>
     <button  align="middle" id ="ask" onclick ="submitquestion()" type="button" >ask your question </button>
@@ -161,8 +162,9 @@ function submitquestion(){
 
   }else if (question.includes("fear")){
     document.getElementById("work").innerHTML = fear;
-    document.getElementById('frametest').src = "https://www.youtube.com/embed/Ei1ELU0VSj4?rel=0";
+    document.getElementById('frametest').src = "https://www.youtube.com/embed/jnNPiDr15dw?rel=0";
     document.getElementById("work").style.color = "red";
+
 
 
   }else if (question.includes("panic")){
