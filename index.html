@@ -19,6 +19,19 @@ body {
     background-color:;
 
 }
+.button {
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+}
+.button1 {border-radius: 12px;}
+.button2 {border-radius: 12px;}
   </style>
 
         <div style ="text-align: center"  id="content">
@@ -40,11 +53,13 @@ body {
     related to emotional well being and meditation.In this app you can ask about love, fear, anxiety,
     work, saddness,happiness, insomnia, boredom, panic, guilt and much more</p>
 
-    <input size = 25 align="middle" type="text" id ="mytext" placeholder="Tell me your feelings"/>
-    <button  align="middle" id ="ask" onclick = "submitquestion()" type="button" >ask your question </button>
-    <p>you can explore by clicking the random button</p>
+    <input size = 25 align="middle" type="text" id ="mytext" placeholder="Ask your question about emotions"/>
 
-    <button  align="middle" id ="random_pic" onclick = "random_topic()" type="button" >get random topic</button>
+    <button  align="middle" id ="ask"onclick = "submitquestion()" class="button button2">submit question</button>
+    <p>you can explore by clicking the random topic button</p>
+
+
+    <button onclick = "random_topic()"  class="button button1">Random topic</button>
 
       <p id = "work">Hi, let me answer your questions about how to enhance your wellbeing</p>
 
