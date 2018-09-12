@@ -76,6 +76,7 @@ body {
       or you can contribute by sending me EOS tokens to <h4>fasterskills</h4>
 
       -Thanks for your help-<p>
+        <p id ="vnumber"> </p>
         <p> Please seek medical help if you have thoughts of self harm, this advice is meant as an extra support</P>
 
 
@@ -300,6 +301,9 @@ else{
 function random_topic(){
 
   var items =[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,7,18,19,20];
+  number_videos = items.length;
+  document.getElementById("vnumber").innerHTML="number of videos available is: "+ number_videos;
+    document.getElementById("vnumber").style.color = "blue";
   var item = items[Math.floor(Math.random()*items.length)];
 
   if (item ===1){
