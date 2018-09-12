@@ -171,6 +171,10 @@ watch the video above for more explanation';
 var thought='Do not beleive every thought that comes to you, this simple action will liberate you \
 from the grip of conditioning, watch the video for more explanation'
 
+var free_mind="the conditioned mind is by definition a slave mind.Society, our parents, our environmet, all have \
+conditioned us to be what we are, for the mind that is not free, this is where action and thoughts \
+are initiated, watch the video for more insight"
+
 function submitquestion(){
   var quest= document.getElementById("mytext").value;
   question = quest.toLowerCase();
@@ -279,6 +283,12 @@ function submitquestion(){
   document.getElementById("work").style.color = "red";
 
 
+}else if (question.includes("freedom")||question.includes("free")){
+  document.getElementById("work").innerHTML = free_mind;
+  document.getElementById('frametest').src = "https://www.youtube.com/embed/pEGvB9DAMjU?rel=0" ;
+  document.getElementById("work").style.color = "red";
+
+
 }
 
 else{
@@ -323,7 +333,7 @@ function random_topic(){
 
 }else if (item===6){
   document.getElementById("work").innerHTML = fear;
-  document.getElementById('frametest').src = "https://www.youtube.com/embed/jnNPiDr15dw?rel=0";
+  document.getElementById('frametest').src = "https://www.youtube.com/embed/Jpe_wcJPD00?rel=0";
   document.getElementById("work").style.color = "red";
 
 
@@ -394,6 +404,14 @@ document.getElementById("work").style.color = "red";
   document.getElementById("work").innerHTML = thought;
   document.getElementById('frametest').src = "https://www.youtube.com/embed/pEGvB9DAMjU?rel=0";
   document.getElementById("work").style.color = "red";
+
+
+}else if (question.includes("freedom")||question.includes("free")){
+  document.getElementById("work").innerHTML = free_mind;
+  document.getElementById('frametest').src = "https://www.youtube.com/embed/Jpe_wcJPD00?rel=0" ;
+  document.getElementById("work").style.color = "red";
+
+
 
 
 }else{
