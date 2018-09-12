@@ -301,7 +301,7 @@ else{
 
 function random_topic(){
 
-  var items =[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,7,18,19];
+  var items =[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,7,18,19,20];
   var item = items[Math.floor(Math.random()*items.length)];
 
   if (item ===1){
@@ -406,7 +406,7 @@ document.getElementById("work").style.color = "red";
   document.getElementById("work").style.color = "red";
 
 
-}else if (question.includes("freedom")||question.includes("free")){
+}else if (item ===20){
   document.getElementById("work").innerHTML = free_mind;
   document.getElementById('frametest').src = "https://www.youtube.com/embed/Jpe_wcJPD00?rel=0" ;
   document.getElementById("work").style.color = "red";
