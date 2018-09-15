@@ -188,6 +188,9 @@ watch the video that explains how';
 var states ='Higher states of being are just extremely enjoyable states that the human mind is capable of  \
 generating, watch the video where I explain how to reach them'
 
+var surrender ='Surrender to what has already happened, we need to unerstand that resisting what already happend \
+is futile, watch the video above it expalins it more'
+
 function submitquestion(){
   var quest= document.getElementById("mytext").value;
   question = quest.toLowerCase();
@@ -317,6 +320,13 @@ function submitquestion(){
 
 
 
+}else if (question.includes("surrender")||question.includes("present moment")){
+  document.getElementById("work").innerHTML = surrender;
+  document.getElementById('frametest').src = "https://www.youtube.com/embed/8x9xmFlin14?rel=0" ;
+  document.getElementById("work").style.color = "red";
+
+
+
 }
 
 else{
@@ -329,7 +339,7 @@ else{
 
 function random_topic(){
 
-  var items =[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,7,18,19,20,21,22,23];
+  var items =[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,7,18,19,20,21,22,23,24];
   number_videos = items.length;
   document.getElementById("vnumber").innerHTML="number of videos available is: "+ number_videos;
     document.getElementById("vnumber").style.color = "blue";
@@ -460,6 +470,13 @@ document.getElementById("work").style.color = "red";
   document.getElementById("work").innerHTML = states;
   document.getElementById('frametest').src = "https://www.youtube.com/embed/cB7wHFOgFSk?rel=0" ;
   document.getElementById("work").style.color = "red";
+
+
+}else if (item ===24){
+  document.getElementById("work").innerHTML = surrender;
+  document.getElementById('frametest').src = "https://www.youtube.com/embed/8x9xmFlin14?rel=0" ;
+  document.getElementById("work").style.color = "red";
+
 
 
 }
