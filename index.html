@@ -201,6 +201,9 @@ var resistance ='Resistance of the mind is responsible of the larger proportion 
 watch the video above to understand the mechanism by which it operates so that you can \
 reduce it and thus reduce suffering'
 
+var emotion_contraction ='The thought, emotion, contraction cycle is what causes moods to arise \
+learn to break it and come out of the cycle and thus improve mood, watch the video above to get a explanation'
+
 function submitquestion(){
   var quest= document.getElementById("mytext").value;
   question = quest.toLowerCase();
@@ -358,6 +361,13 @@ function submitquestion(){
 
 
 
+}else if (question.includes("mood")||question.includes('contraction')){
+  document.getElementById("work").innerHTML = emotion_contraction;
+  document.getElementById('frametest').src = "https://www.youtube.com/embed/pm8W2Czvvy4?rel=0" ;
+  document.getElementById("work").style.color = "red";
+
+
+
 }
 
 else{
@@ -378,7 +388,7 @@ function range(start, end) {
 
 function random_topic(){
 
-  var items =range(1,27);
+  var items =range(1,28);
   number_videos = items.length;
   document.getElementById("vnumber").innerHTML="number of videos available is: "+ number_videos;
     document.getElementById("vnumber").style.color = "blue";
@@ -535,6 +545,13 @@ document.getElementById("work").style.color = "red";
 }else if (item ===27){
   document.getElementById("work").innerHTML = resistance;
   document.getElementById('frametest').src ="https://www.youtube.com/embed/JK4gU7euTTs?rel=0";
+  document.getElementById("work").style.color = "red";
+
+
+
+}else if(item ===28){
+  document.getElementById("work").innerHTML = emotion_contraction;
+  document.getElementById('frametest').src = "https://www.youtube.com/embed/pm8W2Czvvy4?rel=0" ;
   document.getElementById("work").style.color = "red";
 
 
