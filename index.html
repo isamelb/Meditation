@@ -204,6 +204,9 @@ reduce it and thus reduce suffering'
 var emotion_contraction ='The thought, emotion, contraction cycle is what causes moods to arise \
 learn to break it and come out of the cycle and thus improve mood, watch the video above to get a explanation'
 
+var mind_app ='Mind apps is simply an analogy of how a person can change the he or she thinks simply by installing an idea in  \
+th mind, watch the video above for an explanation'
+
 function submitquestion(){
   var quest= document.getElementById("mytext").value;
   question = quest.toLowerCase();
@@ -368,6 +371,13 @@ function submitquestion(){
 
 
 
+}else if (question.includes("app")||question.includes('install')){
+  document.getElementById("work").innerHTML = mind_app;
+  document.getElementById('frametest').src = "https://www.youtube.com/embed/un65OzV5OsU?rel=0" ;
+  document.getElementById("work").style.color = "red";
+
+
+
 }
 
 else{
@@ -388,7 +398,7 @@ function range(start, end) {
 
 function random_topic(){
 
-  var items =range(1,28);
+  var items =range(1,29);
   number_videos = items.length;
   document.getElementById("vnumber").innerHTML="number of videos available is: "+ number_videos;
     document.getElementById("vnumber").style.color = "blue";
@@ -552,6 +562,13 @@ document.getElementById("work").style.color = "red";
 }else if(item ===28){
   document.getElementById("work").innerHTML = emotion_contraction;
   document.getElementById('frametest').src = "https://www.youtube.com/embed/pm8W2Czvvy4?rel=0" ;
+  document.getElementById("work").style.color = "red";
+
+
+
+}else if (item ===29){
+  document.getElementById("work").innerHTML = mind_app;
+  document.getElementById('frametest').src = "https://www.youtube.com/embed/un65OzV5OsU?rel=0" ;
   document.getElementById("work").style.color = "red";
 
 
