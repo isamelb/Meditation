@@ -207,6 +207,9 @@ learn to break it and come out of the cycle and thus improve mood, watch the vid
 var mind_app ='Mind apps is simply an analogy of how a person can change the he or she thinks simply by installing an idea in  \
 th mind, watch the video above for an explanation'
 
+var create_reality='Your thoughts create your subjective reality which in turn \
+creates your objective reality, watch the video above that explains the topic'
+
 function submitquestion(){
   var quest= document.getElementById("mytext").value;
   question = quest.toLowerCase();
@@ -378,6 +381,13 @@ function submitquestion(){
 
 
 
+}else if (question.includes("reality")&& question.includes('create')){
+  document.getElementById("work").innerHTML = mind_app;
+  document.getElementById('frametest').src = "https://www.youtube.com/embed/IU8J_bFfQMY?rel=0" ;
+  document.getElementById("work").style.color = "red";
+
+
+
 }
 
 else{
@@ -398,7 +408,7 @@ function range(start, end) {
 
 function random_topic(){
 
-  var items =range(1,29);
+  var items =range(1,30);
   number_videos = items.length;
   document.getElementById("vnumber").innerHTML="number of videos available is: "+ number_videos;
     document.getElementById("vnumber").style.color = "blue";
@@ -569,6 +579,13 @@ document.getElementById("work").style.color = "red";
 }else if (item ===29){
   document.getElementById("work").innerHTML = mind_app;
   document.getElementById('frametest').src = "https://www.youtube.com/embed/un65OzV5OsU?rel=0" ;
+  document.getElementById("work").style.color = "red";
+
+
+
+}else if (item ===30){
+  document.getElementById("work").innerHTML = mind_app;
+  document.getElementById('frametest').src = "https://www.youtube.com/embed/IU8J_bFfQMY?rel=0" ;
   document.getElementById("work").style.color = "red";
 
 
