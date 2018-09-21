@@ -322,6 +322,7 @@ function submitquestion(){
   document.getElementById("work").innerHTML = free_mind;
   document.getElementById('frametest').src = "https://www.youtube.com/embed/Jpe_wcJPD00?rel=0" ;
   document.getElementById("work").style.color = "red";
+
 }else if (question.includes("morality")||question.includes("concentration")){
   document.getElementById("work").innerHTML = morality;
   document.getElementById('frametest').src = "https://www.youtube.com/embed/dgIhpNDRmsY?rel=0";
@@ -346,7 +347,7 @@ function submitquestion(){
 
 
 
-}else if (question.includes("reality")||question.includes('real')){
+}else if (question.includes("reality")&& !(question.includes('create'))){
   document.getElementById("work").innerHTML = reality;
   document.getElementById('frametest').src = "https://www.youtube.com/embed/ph7IvA_QIYk?rel=0"  ;
   document.getElementById("work").style.color = "red";
@@ -409,6 +410,7 @@ function range(start, end) {
 function random_topic(){
 
   var items =range(1,30);
+
   number_videos = items.length;
   document.getElementById("vnumber").innerHTML="number of videos available is: "+ number_videos;
     document.getElementById("vnumber").style.color = "blue";
