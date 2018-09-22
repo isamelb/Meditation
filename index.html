@@ -210,6 +210,9 @@ th mind, watch the video above for an explanation'
 var create_reality='Your thoughts create your subjective reality which in turn \
 creates your objective reality, watch the video above that explains the topic'
 
+var envy ='Envy or jealousy is a negative emotion that can make the person suffer tremendously \
+watch the video to learn a technique to deal with it '
+
 function submitquestion(){
   var quest= document.getElementById("mytext").value;
   question = quest.toLowerCase();
@@ -389,6 +392,13 @@ function submitquestion(){
 
 
 
+}else if (question.includes("envy")&& question.includes('jealousy')){
+  document.getElementById("work").innerHTML = envy;
+  document.getElementById('frametest').src = "https://www.youtube.com/embed/gjeRq-ZqQek?rel=0";
+  document.getElementById("work").style.color = "red";
+
+
+
 }
 
 else{
@@ -409,7 +419,7 @@ function range(start, end) {
 
 function random_topic(){
 
-  var items =range(1,30);
+  var items =range(1,31);
 
   number_videos = items.length;
   document.getElementById("vnumber").innerHTML="number of videos available is: "+ number_videos;
@@ -588,6 +598,13 @@ document.getElementById("work").style.color = "red";
 }else if (item ===30){
   document.getElementById("work").innerHTML = create_reality;
   document.getElementById('frametest').src = "https://www.youtube.com/embed/IU8J_bFfQMY?rel=0" ;
+  document.getElementById("work").style.color = "red";
+
+
+
+}else if (item ===31){
+  document.getElementById("work").innerHTML = envy;
+  document.getElementById('frametest').src = "https://www.youtube.com/embed/gjeRq-ZqQek?rel=0" ;
   document.getElementById("work").style.color = "red";
 
 
