@@ -199,19 +199,22 @@ you are the observer observing all this, watch the video above where I talk abou
 
 var resistance ='Resistance of the mind is responsible of the larger proportion of human mental suffering. \
 watch the video above to understand the mechanism by which it operates so that you can \
-reduce it and thus reduce suffering'
+reduce it and thus reduce suffering';
 
 var emotion_contraction ='The thought, emotion, contraction cycle is what causes moods to arise \
-learn to break it and come out of the cycle and thus improve mood, watch the video above to get a explanation'
+learn to break it and come out of the cycle and thus improve mood, watch the video above to get a explanation';
 
 var mind_app ='Mind apps is simply an analogy of how a person can change the he or she thinks simply by installing an idea in  \
-th mind, watch the video above for an explanation'
+th mind, watch the video above for an explanation';
 
 var create_reality='Your thoughts create your subjective reality which in turn \
-creates your objective reality, watch the video above that explains the topic'
+creates your objective reality, watch the video above that explains the topic';
 
 var envy ='Envy or jealousy is a negative emotion that can make the person suffer tremendously \
-watch the video to learn a technique to deal with it '
+watch the video to learn a technique to deal with it ';
+
+var friendliness ='Universal friendliness is the univesal wish that you have for all \
+beings to be well, happy, joyfull and serene, watch the video above where I describe the process of doing it';
 
 function submitquestion(){
   var quest= document.getElementById("mytext").value;
@@ -399,6 +402,13 @@ function submitquestion(){
 
 
 
+}else if (question.includes("universal")&& question.includes('friendliness')){
+  document.getElementById("work").innerHTML = friendliness;
+  document.getElementById('frametest').src = "https://www.youtube.com/embed/IU8J_bFfQMY?rel=0" ;
+  document.getElementById("work").style.color = "red";
+
+
+
 }
 
 else{
@@ -419,7 +429,7 @@ function range(start, end) {
 
 function random_topic(){
 
-  var items =range(1,31);
+  var items =range(1,32);
 
   number_videos = items.length;
   document.getElementById("vnumber").innerHTML="number of videos available is: "+ number_videos;
@@ -605,6 +615,13 @@ document.getElementById("work").style.color = "red";
 }else if (item ===31){
   document.getElementById("work").innerHTML = envy;
   document.getElementById('frametest').src = "https://www.youtube.com/embed/gjeRq-ZqQek?rel=0" ;
+  document.getElementById("work").style.color = "red";
+
+
+
+}else if (item ===31){
+  document.getElementById("work").innerHTML = friendliness;
+  document.getElementById('frametest').src = "https://www.youtube.com/embed/IU8J_bFfQMY?rel=0" ;
   document.getElementById("work").style.color = "red";
 
 
