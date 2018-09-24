@@ -216,6 +216,11 @@ watch the video to learn a technique to deal with it ';
 var friendliness ='Universal friendliness is the universal wish that you have for all \
 beings to be well, happy, joyfull and serene, watch the video above where I describe the process of doing it';
 
+
+var emotion ='The emotion is an entity that rises in the mind as a result of a thought which calls an emotion which \
+makes the body contract which brings more thoughts of the same nature and the cycle continues \
+watch the video above for more explanation'
+
 function submitquestion(){
   var quest= document.getElementById("mytext").value;
   question = quest.toLowerCase();
@@ -409,6 +414,13 @@ function submitquestion(){
 
 
 
+}else if (question.includes("emotion") {
+  document.getElementById("work").innerHTML = emotion;
+  document.getElementById('frametest').src = "https://www.youtube.com/embed/QlSPgtoXIOQ?rel=0" ;
+  document.getElementById("work").style.color = "red";
+
+
+
 }
 
 else{
@@ -429,7 +441,7 @@ function range(start, end) {
 
 function random_topic(){
 
-  var items =range(1,32);
+  var items =range(1,33);
 
   number_videos = items.length;
   document.getElementById("vnumber").innerHTML="number of videos available is: "+ number_videos;
@@ -619,9 +631,16 @@ document.getElementById("work").style.color = "red";
 
 
 
-}else if (item ===31){
+}else if (item ===32){
   document.getElementById("work").innerHTML = friendliness;
   document.getElementById('frametest').src = "https://www.youtube.com/embed/PDSjuGUGdrk?rel=0" ;
+  document.getElementById("work").style.color = "red";
+
+
+
+}else if (item ===33) {
+  document.getElementById("work").innerHTML = emotion;
+  document.getElementById('frametest').src = "https://www.youtube.com/embed/QlSPgtoXIOQ?rel=0";
   document.getElementById("work").style.color = "red";
 
 
