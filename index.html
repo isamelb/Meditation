@@ -467,6 +467,11 @@ function submitquestion(){
   document.getElementById("work").style.fontFamily= "Courier New";
 
 
+}else if (question.length<1){
+  document.getElementById("work").innerHTML ="please type a question in the box"
+  document.getElementById("work").style.color = "green";
+  document.getElementById("work").style.fontFamily= "Courier New";
+
 }
 
 else{
@@ -722,12 +727,6 @@ document.getElementById("work").style.fontFamily= "Courier New";
 
 
 }
-
-
-
-
-
-
 
 else{
     document.getElementById("work").innerHTML = "I am still working on other questions and will soon update the app";
