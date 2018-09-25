@@ -221,6 +221,12 @@ var emotion ='The emotion is an entity that rises in the mind as a result of a t
 makes the body contract which brings more thoughts of the same nature and the cycle continues \
 watch the video above for more explanation'
 
+
+var shame ='Shame is an emotion from the family of fear emotions and is dealt with swiftly \
+by applying self love to it, watch the video above that explains how to deal with it'
+
+
+
 function submitquestion(){
   var quest= document.getElementById("mytext").value;
   question = quest.toLowerCase();
@@ -454,6 +460,13 @@ function submitquestion(){
   document.getElementById("work").style.fontFamily= "Courier New";
 
 
+}else if (question.includes("shame")) {
+  document.getElementById("work").innerHTML = shame;
+  document.getElementById('frametest').src = "https://www.youtube.com/embed/E7mkpcqtl-w?rel=0" ;
+  document.getElementById("work").style.color = "red";
+  document.getElementById("work").style.fontFamily= "Courier New";
+
+
 }
 
 else{
@@ -474,7 +487,7 @@ function range(start, end) {
 
 function random_topic(){
 
-  var items =range(1,33);
+  var items =range(1,34);
 
   number_videos = items.length;
   document.getElementById("vnumber").innerHTML="number of videos available is: "+ number_videos;
@@ -697,6 +710,13 @@ document.getElementById("work").style.fontFamily= "Courier New";
 }else if (item ===33) {
   document.getElementById("work").innerHTML = emotion;
   document.getElementById('frametest').src = "https://www.youtube.com/embed/QlSPgtoXIOQ?rel=0";
+  document.getElementById("work").style.color = "red";
+  document.getElementById("work").style.fontFamily= "Courier New";
+
+
+}else if (item ===33) {
+  document.getElementById("work").innerHTML = shame;
+  document.getElementById('frametest').src = "https://www.youtube.com/embed/E7mkpcqtl-w?rel=0" ;
   document.getElementById("work").style.color = "red";
   document.getElementById("work").style.fontFamily= "Courier New";
 
