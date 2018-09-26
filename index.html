@@ -228,6 +228,9 @@ by applying self love to it, watch the video above that explains how to deal wit
 var app_introduction='Here I introduce the app and describe briefly how to use it \
 watch the video above for more info'
 
+var modular_mind ='The theory of the modular mind describes pretty accurately how thoughts and emotions interact to compete \
+for your attention, watch the video above that descibes this in more detail'
+
 
 
 function submitquestion(){
@@ -239,6 +242,8 @@ function submitquestion(){
     document.getElementById('frametest').src = "https://www.youtube.com/embed/gFdUS0Cm1Fs?rel=0";
     document.getElementById("work").style.color = "red";
     document.getElementById("work").style.fontFamily= "Courier New";
+
+
 
   }else if (question.includes("saddness")||question.includes("sad")){
     document.getElementById("work").innerHTML = saddness;
@@ -479,6 +484,15 @@ function submitquestion(){
 
 
 
+}else if (question.includes("modular") && question.includes('mind')) {
+  document.getElementById("work").innerHTML = modular_mind;
+  document.getElementById('frametest').src = "https://www.youtube.com/embed/0N6yZgLbnY8?rel=0" ;
+  document.getElementById("work").style.color = "red";
+  document.getElementById("work").style.fontFamily= "Courier New";
+
+
+
+
 }
 
 
@@ -511,7 +525,7 @@ function range(start, end) {
 
 function random_topic(){
 
-  var items =range(1,35);
+  var items =range(1,36);
 
   number_videos = items.length;
   document.getElementById("vnumber").innerHTML="number of videos available is: "+ number_videos;
@@ -752,7 +766,17 @@ document.getElementById("work").style.fontFamily= "Courier New";
   document.getElementById("work").style.fontFamily= "Courier New";
 
 
+}else if (item ===35) {
+  document.getElementById("work").innerHTML = modular_mind;
+  document.getElementById('frametest').src = "https://www.youtube.com/embed/0N6yZgLbnY8?rel=0" ;
+  document.getElementById("work").style.color = "red";
+  document.getElementById("work").style.fontFamily= "Courier New";
+
+
+
+
 }
+
 
 else{
     document.getElementById("work").innerHTML = "I am still working on other questions and will soon update the app";
