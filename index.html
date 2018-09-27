@@ -74,7 +74,7 @@ body {
 
     <p>If you feel like sponsoring me to keep maintaining this website by adding more content,
       you can contribute by paypal on the following email: <h4>isamelb@gmail.com</h4>
-      
+
 
       -Thanks for your help-<p>
         <p id ="vnumber"> </p>
@@ -230,6 +230,10 @@ watch the video above for more info'
 
 var modular_mind ='The theory of the modular mind describes pretty accurately how thoughts and emotions interact to compete \
 for your attention, watch the video above that descibes this in more detail'
+
+
+var anger ='Anger is an explosive emotion, it rises suddenly in the mind in a fraction of a second \
+watch the video above that explains how to deal with it';
 
 
 
@@ -493,6 +497,15 @@ function submitquestion(){
 
 
 
+}else if (question.includes("anger")  {
+  document.getElementById("work").innerHTML = anger;
+  document.getElementById('frametest').src = "https://www.youtube.com/embed/VAZPjrsOCcU?rel=0";
+  document.getElementById("work").style.color = "red";
+  document.getElementById("work").style.fontFamily= "Courier New";
+
+
+
+
 }
 
 
@@ -525,7 +538,7 @@ function range(start, end) {
 
 function random_topic(){
 
-  var items =range(1,36);
+  var items =range(1,37);
 
   number_videos = items.length;
   document.getElementById("vnumber").innerHTML="number of videos available is: "+ number_videos;
@@ -766,9 +779,18 @@ document.getElementById("work").style.fontFamily= "Courier New";
   document.getElementById("work").style.fontFamily= "Courier New";
 
 
-}else if (item ===35) {
+}else if (item ===36) {
   document.getElementById("work").innerHTML = modular_mind;
   document.getElementById('frametest').src = "https://www.youtube.com/embed/0N6yZgLbnY8?rel=0" ;
+  document.getElementById("work").style.color = "red";
+  document.getElementById("work").style.fontFamily= "Courier New";
+
+
+
+
+}else if (item ===37)  {
+  document.getElementById("work").innerHTML = anger;
+  document.getElementById('frametest').src = "https://www.youtube.com/embed/VAZPjrsOCcU?rel=0";
   document.getElementById("work").style.color = "red";
   document.getElementById("work").style.fontFamily= "Courier New";
 
