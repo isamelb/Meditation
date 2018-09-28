@@ -236,6 +236,11 @@ var anger ='Anger is an explosive emotion, it rises suddenly in the mind in a fr
 watch the video above that explains how to deal with it';
 
 
+var addiction ='Addictions can destroy lives, they can be so powerful that they can \
+completely alter the destiny of a person, watch the video above where I explain how to \
+rid yourself from addictions'
+
+
 
 function submitquestion(){
   var quest= document.getElementById("mytext").value;
@@ -506,6 +511,15 @@ function submitquestion(){
 
 
 
+}else if (question.includes("addiction") ) {
+  document.getElementById("work").innerHTML = addiction;
+  document.getElementById('frametest').src = "https://www.youtube.com/embed/dzsh29EZ1vU?rel=0";
+  document.getElementById("work").style.color = "red";
+  document.getElementById("work").style.fontFamily= "Courier New";
+
+
+
+
 }
 
 
@@ -538,7 +552,7 @@ function range(start, end) {
 
 function random_topic(){
 
-  var items =range(1,37);
+  var items =range(1,38);
 
   number_videos = items.length;
   document.getElementById("vnumber").innerHTML="number of videos available is: "+ number_videos;
@@ -795,6 +809,15 @@ document.getElementById("work").style.fontFamily= "Courier New";
   document.getElementById("work").style.fontFamily= "Courier New";
 
 
+
+
+}else if(item ===38) {
+  document.getElementById("work").innerHTML = addiction;
+  document.getElementById('frametest').src = "https://www.youtube.com/embed/dzsh29EZ1vU?rel=0";
+  document.getElementById("work").style.color = "red";
+  document.getElementById("work").style.fontFamily= "Courier New";
+
+"https://www.youtube.com/embed/dzsh29EZ1vU?rel=0"
 
 
 }
