@@ -244,6 +244,8 @@ rid yourself from addictions'
 var optional_suffering ='Pain is inevitable but suffering is optional \
 watch the video above that expands on this idea'
 
+var test_arabic ='عصام البوسرغيني: انا هو خالق هادا الموقع'
+
 
 
 function submitquestion(){
@@ -527,6 +529,14 @@ function submitquestion(){
 }else if (question.includes("pain")&& question.includes("suffering") ) {
   document.getElementById("work").innerHTML = optional_suffering;
   document.getElementById('frametest').src = "https://www.youtube.com/embed/BHoZGaDrreo?rel=0" ;
+  document.getElementById("work").style.fontFamily= "Courier New";
+
+
+
+
+}else if (question.includes("name")&& question.includes("arabic") ) {
+  document.getElementById("work").innerHTML = test_arabic;
+  document.getElementById('frametest').src = "https://www.youtube.com/embed/NB6E6yACDpk?rel=0" ;
   document.getElementById("work").style.fontFamily= "Courier New";
 
 
