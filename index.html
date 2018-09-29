@@ -241,6 +241,10 @@ completely alter the destiny of a person, watch the video above where I explain 
 rid yourself from addictions'
 
 
+var optional_suffering ='Pain is inevitable but suffering is optional \
+watch the video above that expands on this idea'
+
+
 
 function submitquestion(){
   var quest= document.getElementById("mytext").value;
@@ -391,7 +395,7 @@ function submitquestion(){
 
 
 
-}else if (question.includes("pain")||question.includes("physical pain")){
+}else if (question.includes("pain")&& !(question.includes("optional"))){
   document.getElementById("work").innerHTML = pain;
   document.getElementById('frametest').src = "https://www.youtube.com/embed/N5IlJs-Ed-M?rel=0";
   document.getElementById("work").style.color = "red";
@@ -520,6 +524,14 @@ function submitquestion(){
 
 
 
+}else if (question.includes("pain")|| question.includes("optional") ) {
+  document.getElementById("work").innerHTML = optional_suffering;
+  document.getElementById('frametest').src = "https://www.youtube.com/embed/BHoZGaDrreo?rel=0" ;
+  document.getElementById("work").style.fontFamily= "Courier New";
+
+
+
+
 }
 
 
@@ -552,7 +564,7 @@ function range(start, end) {
 
 function random_topic(){
 
-  var items =range(1,38);
+  var items =range(1,39);
 
   number_videos = items.length;
   document.getElementById("vnumber").innerHTML="number of videos available is: "+ number_videos;
@@ -817,10 +829,22 @@ document.getElementById("work").style.fontFamily= "Courier New";
   document.getElementById("work").style.color = "red";
   document.getElementById("work").style.fontFamily= "Courier New";
 
-"https://www.youtube.com/embed/dzsh29EZ1vU?rel=0"
+
+
+
+}else if (question.includes("pain")|| question.includes("optional") ) {
+  document.getElementById("work").innerHTML = optional_suffering;
+  document.getElementById('frametest').src = "https://www.youtube.com/embed/BHoZGaDrreo?rel=0" ;
+  document.getElementById("work").style.color = "red";
+  document.getElementById("work").style.fontFamily= "Courier New";
+
+
 
 
 }
+
+
+
 
 
 else{
