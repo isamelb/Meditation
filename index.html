@@ -241,6 +241,10 @@ completely alter the destiny of a person, watch the video above where I explain 
 rid yourself from addictions'
 
 
+var senses ='Try to be mindfull of the information coming from the senses rather than being absorbed \
+in your thoughts, watch the video above where I discuss the idea'
+
+
 var optional_suffering ='Pain is inevitable but suffering is optional \
 watch the video above that expands on this idea'
 
@@ -542,6 +546,14 @@ function submitquestion(){
 
 
 
+}else if (question.includes("senses")) {
+  document.getElementById("work").innerHTML = senses;
+  document.getElementById('frametest').src = "https://www.youtube.com/embed/4NS14kjswGI?rel=0"  ;
+  document.getElementById("work").style.fontFamily= "Courier New";
+
+
+
+
 }
 
 
@@ -574,7 +586,7 @@ function range(start, end) {
 
 function random_topic(){
 
-  var items =range(1,39);
+  var items =range(1,40);
 
   number_videos = items.length;
   document.getElementById("vnumber").innerHTML="number of videos available is: "+ number_videos;
@@ -846,6 +858,14 @@ document.getElementById("work").style.fontFamily= "Courier New";
   document.getElementById("work").innerHTML = optional_suffering;
   document.getElementById('frametest').src = "https://www.youtube.com/embed/BHoZGaDrreo?rel=0" ;
   document.getElementById("work").style.color = "red";
+  document.getElementById("work").style.fontFamily= "Courier New";
+
+
+
+
+}else if(item ===40)   {
+  document.getElementById("work").innerHTML = senses;
+  document.getElementById('frametest').src = "https://www.youtube.com/embed/4NS14kjswGI?rel=0"  ;
   document.getElementById("work").style.fontFamily= "Courier New";
 
 
