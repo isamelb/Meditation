@@ -55,9 +55,9 @@ body {
     related to emotional well being and meditation.In this app you can ask about love, fear, anxiety,
     work, saddness,happiness, insomnia, boredom, panic, guilt and much more</font></p>
 
-    <input id ="ask"     size = 25 align="middle" type="text" id ="mytext" placeholder="Ask your question about emotions"/>
+    <input     size = 25 align="middle" type="text" id ="mytext" placeholder="Ask your question about emotions"/>
 
-    <button id ="submit_ques" align="middle" id ="ask"onclick = "submitquestion()" class="button button2">submit question</button>
+    <button id ="submit_ques" align="middle" onclick = "submitquestion()" class="button button2">submit question</button>
     <p id="tellrandom">Try a random topic</p>
 
 
@@ -275,8 +275,8 @@ function myFunction(){
     document.getElementById("title").innerHTML = "كيف تنقص من عذاب الدهن";
     document.getElementById("my_name").innerHTML = "صنع عصام البوسرغيني"
     document.getElementById('frametest').src = "https://www.youtube.com/embed/NB6E6yACDpk?rel=0" ;
-    document.getElementById("ask").placeholder = "يمكنك ان تسأل هنا"
-    document.getElementById("submit_ques").innerHTML="ابعت السؤال"
+    document.getElementById("mytext").placeholder = "يمكنك ان تسأل هنا"
+     document.getElementById("submit_ques").innerHTML="ابعت السؤال"
 
   }else{
     document.getElementById("intro").innerHTML = intro;
@@ -285,8 +285,8 @@ function myFunction(){
     document.getElementById("title").innerHTML = "How to reduce Mental Suffering"
     document.getElementById("my_name").innerHTML = "by Isam Elbousserghini"
     document.getElementById('frametest').src = "https://www.youtube.com/embed/gj5xpttuXuI?rel=0" ;
-    document.getElementById("ask").placeholder = " ask your question about emotions"
-      document.getElementById("submit_ques").innerHTML="submit question"
+    document.getElementById("mytext").placeholder = " ask your question about emotions"
+    document.getElementById("submit_ques").innerHTML="submit question"
 
 
   }
