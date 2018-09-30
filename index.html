@@ -61,26 +61,26 @@ body {
     <p id="tellrandom">Try a random topic</p>
 
 
-    <button onclick = "random_topic()"  class="button button1">Random topic</button>
+    <button id ="rtopic" onclick = "random_topic()"  class="button button1">Random topic</button>
     <button id ="mbutton" onclick="myFunction()" class="button button3" >Moroccan Arabic</button>
 
       <p id = "work"> <font face = "Courier New" > Hi, let me answer your questions about how to enhance your wellbeing</font></p>
 
 
-<p>I wrote a paper about how to become happy, you can read it below</p>
+<p id ="paper">I wrote a paper about how to become happy, you can read it below</p>
     click on image to read: <a href="https://docs.google.com/document/d/1cDZAn_aYELlSWr4FX01mYMTufhhH7WwYAU-Tao3k6Ao/edit?usp=sharing">
                             <img border="0" alt="theory" src="./sunsetlogo.jpeg" width="100" height="100">
                             </a>
 </p>
 
 
-    <p>If you feel like sponsoring me to keep maintaining this website by adding more content,
+    <p id ="sponsor">If you feel like sponsoring me to keep maintaining this website by adding more content,
       you can contribute by paypal on the following email: <h4>isamelb@gmail.com</h4>
 
 
       -Thanks for your help-<p>
         <p id ="vnumber"> </p>
-        <p> Please seek medical help if you have thoughts of self harm, this advice is meant as an extra support</P>
+        <p id="medical"> Please seek medical help if you have thoughts of self harm, this advice is meant as an extra support</P>
 
 
 <script type="text/javascript">
@@ -277,7 +277,14 @@ function myFunction(){
     document.getElementById("my_name").innerHTML = "صنع عصام البوسرغيني"
     document.getElementById('frametest').src = "https://www.youtube.com/embed/NB6E6yACDpk?rel=0" ;
     document.getElementById("mytext").placeholder = "يمكنك ان تسأل هنا"
-     document.getElementById("submit_ques").innerHTML="ابعت السؤال"
+   document.getElementById("submit_ques").innerHTML="ابعت السؤال"
+   document.getElementById("tellrandom").innerHTML="اختر فيديو عشوائي"
+   document.getElementById("rtopic").innerHTML=" موضوع عشوائي"
+   document.getElementById("work").innerHTML=""
+   document.getElementById("medical").innerHTML=""
+   document.getElementById("paper").innerHTML=""
+   document.getElementById("sponsor").innerHTML=""
+
 
   }else{
     document.getElementById("intro").innerHTML = intro;
@@ -288,8 +295,13 @@ function myFunction(){
     document.getElementById('frametest').src = "https://www.youtube.com/embed/gj5xpttuXuI?rel=0" ;
     document.getElementById("mytext").placeholder = " ask your question about emotions"
     document.getElementById("submit_ques").innerHTML="submit question"
-
-
+    document.getElementById("tellrandom").innerHTML="Try a random topic"
+    document.getElementById("rtopic").innerHTML="Randon Topic"
+    document.getElementById("work").innerHTML="Hi, let me answer your questions about how to enhance your wellbeing"
+    document.getElementById("medical").innerHTML="Please seek medical help if you have thoughts of self harm, this advice is meant as an extra support"
+    document.getElementById("paper").innerHTML="I wrote a paper about how to become happy, you can read it below"
+    document.getElementById("sponsor").innerHTML="If you feel like sponsoring me to keep maintaining this website by adding more content, \
+      you can contribute by paypal on the following email: <h4>isamelb@gmail.com</h4>"
   }
 }
 
