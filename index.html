@@ -55,9 +55,9 @@ body {
     related to emotional well being and meditation.In this app you can ask about love, fear, anxiety,
     work, saddness,happiness, insomnia, boredom, panic, guilt and much more</font></p>
 
-    <input size = 25 align="middle" type="text" id ="mytext" placeholder="Ask your question about emotions"/>
+    <input id ="ask"     size = 25 align="middle" type="text" id ="mytext" placeholder="Ask your question about emotions"/>
 
-    <button  align="middle" id ="ask"onclick = "submitquestion()" class="button button2">submit question</button>
+    <button id ="submit_ques" align="middle" id ="ask"onclick = "submitquestion()" class="button button2">submit question</button>
     <p id="tellrandom">Try a random topic</p>
 
 
@@ -257,8 +257,8 @@ watch the video above that expands on this idea'
 
 var test_arabic ='عصام البوسرغيني: انا هو خالق هادا الموقع'
 
-var arabic_intro ='    عصام البوسرغيني: انا هو خالق هادا الموقع  \
-  هادا الموقع فيه فديوات يشرحون كيف تتعامل مع العواطف     \
+var arabic_intro ='   في هاذا الموقع يمكنك طرح اسءلة  \
+عندها علاقة بالعواطف و جلب راحة البال    \
   لكي تصبح سعيدا جدا      '
 
 
@@ -275,15 +275,20 @@ function myFunction(){
     document.getElementById("title").innerHTML = "كيف تنقص من عذاب الدهن";
     document.getElementById("my_name").innerHTML = "صنع عصام البوسرغيني"
     document.getElementById('frametest').src = "https://www.youtube.com/embed/NB6E6yACDpk?rel=0" ;
-
+    document.getElementById("ask").placeholder = " يمكنك ان تسءل هنا"
+    document.getElementById("submit_ques").innerHTML="ابعت السءال"
 
   }else{
     document.getElementById("intro").innerHTML = intro;
     document.getElementById("mbutton").innerHTML="Moroccan Arabic"
-    document.getElementById("love_matters").innerHTML = "LOve is what really matters";
+    document.getElementById("love_matters").innerHTML = "Love is what really matters";
     document.getElementById("title").innerHTML = "How to reduce Mental Suffering"
     document.getElementById("my_name").innerHTML = "by Isam Elbousserghini"
-      document.getElementById('frametest').src = "https://www.youtube.com/embed/gj5xpttuXuI?rel=0" ;
+    document.getElementById('frametest').src = "https://www.youtube.com/embed/gj5xpttuXuI?rel=0" ;
+    document.getElementById("ask").placeholder = " ask your question about emotions"
+      document.getElementById("submit_ques").innerHTML="submit question"
+
+
   }
 }
 
