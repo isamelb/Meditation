@@ -44,12 +44,12 @@ body {
 
         <img src="./rose.jpeg" align="left" class="ribbon" alt="Hi"/>
 
-         <div style="color:red;" style ="text-align: center">love is what really matters</div>
+         <div id ="love_matters" style="color:red;" style ="text-align: center">love is what really matters</div>
 
   </div>
 
-    <h2 align ="center">How to reduce mental suffering</h2>
-    <p style="font-size:10px">By Isam Elbousserghini</p>
+    <h2 id = "title"   align ="center">How to reduce mental suffering</h2>
+    <p id = "my_name" style="font-size:10px">By Isam Elbousserghini</p>
 
     <p id ="intro"><font face = "Courier New" > Mental skills to reduce suffering: you can ask questions,
     related to emotional well being and meditation.In this app you can ask about love, fear, anxiety,
@@ -271,9 +271,18 @@ function myFunction(){
   if (document.getElementById("mbutton").innerHTML=="Moroccan Arabic"){
     document.getElementById("mbutton").innerHTML="Change to English"
     document.getElementById("intro").innerHTML = arabic_intro;
+    document.getElementById("love_matters").innerHTML = "الحب هو سر نجاح الامم";
+    document.getElementById("title").innerHTML = "كيف تنقص من عداب الدهن";
+    document.getElementById("my_name").innerHTML = "صنع عصام البوسرغيني"
+
+
   }else{
     document.getElementById("intro").innerHTML = intro;
     document.getElementById("mbutton").innerHTML="Moroccan Arabic"
+    document.getElementById("love_matters").innerHTML = "LOve is what really matters";
+    document.getElementById("title").innerHTML = "How to reduce Mental Suffering"
+    document.getElementById("my_name").innerHTML = "by Isam Elbousserghini"
+
   }
 }
 
