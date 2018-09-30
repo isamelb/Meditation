@@ -32,6 +32,7 @@ body {
 }
 .button1 {border-radius: 6px;}
 .button2 {border-radius: 6px;}
+.button3 {border-radius: 6px;}
   </style>
 
         <div style ="text-align: center"  id="content">
@@ -50,7 +51,7 @@ body {
     <h2 align ="center">How to reduce mental suffering</h2>
     <p style="font-size:10px">By Isam Elbousserghini</p>
 
-    <p><font face = "Courier New" > Mental skills to reduce suffering: you can ask questions,
+    <p id ="intro"><font face = "Courier New" > Mental skills to reduce suffering: you can ask questions,
     related to emotional well being and meditation.In this app you can ask about love, fear, anxiety,
     work, saddness,happiness, insomnia, boredom, panic, guilt and much more</font></p>
 
@@ -61,6 +62,7 @@ body {
 
 
     <button onclick = "random_topic()"  class="button button1">Random topic</button>
+    <button id ="mbutton" onclick="myFunction()" class="button button3" >Moroccan Arabic</button>
 
       <p id = "work"> <font face = "Courier New" > Hi, let me answer your questions about how to enhance your wellbeing</font></p>
 
@@ -82,6 +84,11 @@ body {
 
 
 <script type="text/javascript">
+
+
+var intro =' Mental skills to reduce suffering: you can ask questions,\
+related to emotional well being and meditation.In this app you can ask about love, fear, anxiety,\
+work, saddness,happiness, insomnia, boredom, panic, guilt and much more'
 
 var dont_work = 'relax, walk in nature and meditate,\
  dont work too hard learn to enjoy life more, \
@@ -249,6 +256,28 @@ var optional_suffering ='Pain is inevitable but suffering is optional \
 watch the video above that expands on this idea'
 
 var test_arabic ='عصام البوسرغيني: انا هو خالق هادا الموقع'
+
+var arabic_intro ='    عصام البوسرغيني: انا هو خالق هادا الموقع  \
+  هادا الموقع فيه فديوات يشرحون كيف تتعامل مع العواطف     \
+  لكي تصبح سعيدا جدا      '
+
+
+
+
+
+function myFunction(){
+
+
+  if (document.getElementById("mbutton").innerHTML=="Moroccan Arabic"){
+    document.getElementById("mbutton").innerHTML="Change to English"
+    document.getElementById("intro").innerHTML = arabic_intro;
+  }else{
+    document.getElementById("intro").innerHTML = intro;
+    document.getElementById("mbutton").innerHTML="Moroccan Arabic"
+  }
+}
+
+
 
 
 
