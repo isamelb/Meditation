@@ -62,7 +62,7 @@ body {
 
 
     <button id ="rtopic" onclick = "random_topic()"  class="button button1">Random topic</button>
-    <button id ="mbutton" onclick="myFunction()" class="button button3" >Moroccan Arabic</button>
+    <button id ="mbutton" onclick="myFunction()" class="button button3" >العربية المغربية</button>
 
       <p id = "work"> <font face = "Courier New" > Hi, let me answer your questions about how to enhance your wellbeing</font></p>
 
@@ -269,7 +269,7 @@ var arabic_intro ='في هاذا الموقع يمكنك أن تطرح أسئل�
 function myFunction(){
 
 
-  if (document.getElementById("mbutton").innerHTML=="Moroccan Arabic"){
+  if (document.getElementById("mbutton").innerHTML=="العربية المغربية"){
     document.getElementById("mbutton").innerHTML="Change to English"
     document.getElementById("intro").innerHTML = arabic_intro;
     document.getElementById("love_matters").innerHTML = "الحب هو سر نجاح الامم";
@@ -288,7 +288,7 @@ function myFunction(){
 
   }else{
     document.getElementById("intro").innerHTML = intro;
-    document.getElementById("mbutton").innerHTML="Moroccan Arabic"
+    document.getElementById("mbutton").innerHTML="العربية المغربية"
     document.getElementById("love_matters").innerHTML = "Love is what really matters";
     document.getElementById("title").innerHTML = "How to reduce Mental Suffering"
     document.getElementById("my_name").innerHTML = "by Isam Elbousserghini"
