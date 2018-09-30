@@ -285,7 +285,7 @@ function myFunction(){
    document.getElementById("paper").innerHTML=""
    document.getElementById("sponsor").innerHTML=""
   document.getElementById('rtopic').setAttribute( "onclick", "javascript: Boo();" );
-
+  document.getElementById('submit_ques').setAttribute( "onclick", "javascript: Boo();" );
 
   }else{
     document.getElementById("intro").innerHTML = intro;
@@ -304,6 +304,8 @@ function myFunction(){
     document.getElementById("sponsor").innerHTML="If you feel like sponsoring me to keep maintaining this website by adding more content, \
       you can contribute by paypal on the following email: <h4>isamelb@gmail.com</h4>"
     document.getElementById('rtopic').setAttribute( "onclick", "javascript: random_topic();" );
+  document.getElementById('submit_ques').setAttribute( "onclick", "javascript: submitquestion();" );
+
   }
 }
 function Boo(){
