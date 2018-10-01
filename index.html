@@ -67,8 +67,8 @@ body {
       <p id = "work"> <font face = "Courier New" > Hi, let me answer your questions about how to enhance your wellbeing</font></p>
 
 
-<p id ="paper"></p>
-     <a href="https://docs.google.com/document/d/1cDZAn_aYELlSWr4FX01mYMTufhhH7WwYAU-Tao3k6Ao/edit?usp=sharing">
+<p id ="paper">
+     <a id ="link"  href="https://docs.google.com/document/d/1cDZAn_aYELlSWr4FX01mYMTufhhH7WwYAU-Tao3k6Ao/edit?usp=sharing">
                             <!<img border="0" alt="theory" src="./sunsetlogo.jpeg" width="100" height="100">
                             I wrote a paper about how to become happy, you can read it here
                             </a>
@@ -300,7 +300,7 @@ function myFunction(){
     document.getElementById("rtopic").innerHTML=" موضوع عشوائي"
     document.getElementById("work").innerHTML=""
     document.getElementById("medical").innerHTML=""
-    document.getElementById("paper").innerHTML=""
+  //  document.getElementById("paper").innerHTML=""
     document.getElementById("sponsor").innerHTML=""
     document.getElementById('rtopic').setAttribute( "onclick", "javascript: arabic_random();" );
     document.getElementById('submit_ques').setAttribute( "onclick", "javascript: arabic_submit();" );
@@ -318,7 +318,7 @@ function myFunction(){
     document.getElementById("rtopic").innerHTML="Random Topic"
     document.getElementById("work").innerHTML="Hi, let me answer your questions about how to enhance your wellbeing"
     document.getElementById("medical").innerHTML="Please seek medical help if you have thoughts of self harm, this advice is meant as an extra support"
-    document.getElementById("paper").innerHTML="I wrote a paper about how to become happy, you can read it below"
+    //document.getElementById("link").text ="I wrote a paper about how to become happy, you can read it below"
     document.getElementById("sponsor").innerHTML="If you feel like sponsoring me to keep maintaining this website by adding more content, \
       you can contribute by paypal on the following email: "
     document.getElementById('rtopic').setAttribute( "onclick", "javascript: random_topic();" );
