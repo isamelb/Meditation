@@ -245,15 +245,21 @@ watch the video above that explains how to deal with it';
 
 var addiction ='Addictions can destroy lives, they can be so powerful that they can \
 completely alter the destiny of a person, watch the video above where I explain how to \
-rid yourself from addictions'
+rid yourself from addictions';
 
 
 var senses ='Try to be mindfull of the information coming from the senses rather than being absorbed \
-in your thoughts, watch the video above where I discuss the idea'
+in your thoughts, watch the video above where I discuss the idea';
 
 
 var optional_suffering ='Pain is inevitable but suffering is optional \
-watch the video above that expands on this idea'
+watch the video above that expands on this idea';
+
+
+var motivation ='Did you know that self approval and self love is \
+necessary to keep your motivation to acheive any goal in life \
+watch the video above that describes this point in more detail';
+
 
 var test_arabic ='عصام البوسرغيني: انا هو خالق هادا الموقع'
 
@@ -277,15 +283,15 @@ function myFunction(){
     document.getElementById("my_name").innerHTML = "صنع عصام البوسرغيني"
     document.getElementById('frametest').src = "https://www.youtube.com/embed/NB6E6yACDpk?rel=0" ;
     document.getElementById("mytext").placeholder = "يمكنك ان تسأل هنا"
-   document.getElementById("submit_ques").innerHTML="ابعت السؤال"
-   document.getElementById("tellrandom").innerHTML="اختر فيديو عشوائي"
-   document.getElementById("rtopic").innerHTML=" موضوع عشوائي"
-   document.getElementById("work").innerHTML=""
-   document.getElementById("medical").innerHTML=""
-   document.getElementById("paper").innerHTML=""
-   document.getElementById("sponsor").innerHTML=""
-  document.getElementById('rtopic').setAttribute( "onclick", "javascript: Boo();" );
-  document.getElementById('submit_ques').setAttribute( "onclick", "javascript: Boo();" );
+    document.getElementById("submit_ques").innerHTML="ابعت السؤال"
+    document.getElementById("tellrandom").innerHTML="اختر فيديو عشوائي"
+    document.getElementById("rtopic").innerHTML=" موضوع عشوائي"
+    document.getElementById("work").innerHTML=""
+    document.getElementById("medical").innerHTML=""
+    document.getElementById("paper").innerHTML=""
+    document.getElementById("sponsor").innerHTML=""
+    document.getElementById('rtopic').setAttribute( "onclick", "javascript: Boo();" );
+    document.getElementById('submit_ques').setAttribute( "onclick", "javascript: Boo();" );
 
   }else{
     document.getElementById("intro").innerHTML = intro;
@@ -304,7 +310,7 @@ function myFunction(){
     document.getElementById("sponsor").innerHTML="If you feel like sponsoring me to keep maintaining this website by adding more content, \
       you can contribute by paypal on the following email: <h4>isamelb@gmail.com</h4>"
     document.getElementById('rtopic').setAttribute( "onclick", "javascript: random_topic();" );
-  document.getElementById('submit_ques').setAttribute( "onclick", "javascript: submitquestion();" );
+    document.getElementById('submit_ques').setAttribute( "onclick", "javascript: submitquestion();" );
 
   }
 }
@@ -618,6 +624,14 @@ function submitquestion(){
 
 
 
+}else if (question.includes("motivation")) {
+  document.getElementById("work").innerHTML = motivation;
+  document.getElementById('frametest').src = "https://www.youtube.com/embed/wxHtXETD09s?rel=0"  ;
+  document.getElementById("work").style.fontFamily= "Courier New";
+
+
+
+
 }
 
 
@@ -650,7 +664,7 @@ function range(start, end) {
 
 function random_topic(){
 
-  var items =range(1,40);
+  var items =range(1,41);
 
   number_videos = items.length;
   document.getElementById("vnumber").innerHTML="number of videos available is: "+ number_videos;
@@ -930,6 +944,16 @@ document.getElementById("work").style.fontFamily= "Courier New";
 }else if(item ===40)   {
   document.getElementById("work").innerHTML = senses;
   document.getElementById('frametest').src = "https://www.youtube.com/embed/4NS14kjswGI?rel=0"  ;
+  document.getElementById("work").style.color = "red";
+  document.getElementById("work").style.fontFamily= "Courier New";
+
+
+
+
+}else if (item ===41)  {
+  document.getElementById("work").innerHTML = motivation;
+  document.getElementById('frametest').src = "https://www.youtube.com/embed/wxHtXETD09s?rel=0" ;
+  document.getElementById("work").style.color = "red";
   document.getElementById("work").style.fontFamily= "Courier New";
 
 
