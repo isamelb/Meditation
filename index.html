@@ -268,6 +268,12 @@ var arabic_intro ='في هاذا الموقع يمكنك أن تطرح أسئل�
 لكي تصبح سعيدا \
  '
 
+ var arabic_love ='عاطفة الحب هي مصضر العواطف الحميدة \
+ شاهد الفديو لمعلومات اكتر\   \
+ لكي تصبح سعيدا \
+  '
+
+
 
 
 
@@ -290,8 +296,8 @@ function myFunction(){
     document.getElementById("medical").innerHTML=""
     document.getElementById("paper").innerHTML=""
     document.getElementById("sponsor").innerHTML=""
-    document.getElementById('rtopic').setAttribute( "onclick", "javascript: Boo();" );
-    document.getElementById('submit_ques').setAttribute( "onclick", "javascript: Boo();" );
+    document.getElementById('rtopic').setAttribute( "onclick", "javascript: arabic_random();" );
+    document.getElementById('submit_ques').setAttribute( "onclick", "javascript: arabic_submit();" );
 
   }else{
     document.getElementById("intro").innerHTML = intro;
@@ -314,10 +320,57 @@ function myFunction(){
 
   }
 }
-function Boo(){
 
-  document.getElementById("work").innerHTML="This is a work in progress";
+function arabic_random(){
+
+var items =range(1,2);
+
+number_videos = items.length;
+  document.getElementById("vnumber").innerHTML="number of videos available is: "+ number_videos;
+  document.getElementById("vnumber").style.color = "blue";
+var item = items[Math.floor(Math.random()*items.length)];
+
+if (item ===1){
+
+  document.getElementById("work").innerHTML = arabic_love;
+  document.getElementById('frametest').src = "https://www.youtube.com/embed/_iGrZXrvMRI?rel=0" ;
+  document.getElementById("work").style.fontFamily= "Courier New";
+
+}else if (item===2){
+  document.getElementById("work").innerHTML = saddness;
+  document.getElementById('frametest').src = "https://www.youtube.com/embed/iVDnRV2YgZs?rel=0";
+  document.getElementById("work").style.color = "red";
+
 }
+
+
+};
+
+
+
+
+
+function arabic_submit(){
+  var quest= document.getElementById("mytext").value;
+  question = quest.toLowerCase();
+
+  if (question.includes("الحب")) {
+    document.getElementById("work").innerHTML = arabic_love;
+    document.getElementById('frametest').src = "https://www.youtube.com/embed/_iGrZXrvMRI?rel=0" ;
+    document.getElementById("work").style.fontFamily= "Courier New";
+
+
+
+
+
+  }
+};
+
+
+
+
+
+
 
 
 
@@ -667,7 +720,7 @@ function random_topic(){
   var items =range(1,41);
 
   number_videos = items.length;
-  document.getElementById("vnumber").innerHTML="number of videos available is: "+ number_videos;
+    document.getElementById("vnumber").innerHTML="number of videos available is: "+ number_videos;
     document.getElementById("vnumber").style.color = "blue";
   var item = items[Math.floor(Math.random()*items.length)];
 
