@@ -89,16 +89,16 @@ body {
 
 var intro =' Mental skills to reduce suffering: you can ask questions,\
 related to emotional well being and meditation.In this app you can ask about love, fear, anxiety,\
-work, saddness,happiness, insomnia, boredom, panic, guilt and much more'
+work, sadness,happiness, insomnia, boredom, panic, guilt and much more'
 
 var dont_work = 'relax, walk in nature and meditate,\
  dont work too hard learn to enjoy life more, \
  just be present, don\'t try to be anything special, \
  just love yourself exactely how you are right now';
 
-var saddness= 'saddness manifests itself as tension in the upper scalp, massage it vigorously for relief \
-there are two ways to deal with saddness, one physical and one mental: the physical is to locate the area \
-in the upper scalp that is perpetrating the sensations of saddness and massage it, the second is \
+var sadness= 'sadness manifests itself as tension in the upper scalp, massage it vigorously for relief \
+there are two ways to deal with saddess, one physical and one mental: the physical is to locate the area \
+in the upper scalp that is perpetrating the sensations of sadness and massage it, the second is \
 to fully accept it so as not to offer any resistance to it so as relax the body, watch the video above \
 it explains how to deal with it';
 
@@ -406,8 +406,8 @@ function submitquestion(){
 
 
 
-  }else if (question.includes("saddness")||question.includes("sad")){
-    document.getElementById("work").innerHTML = saddness;
+  }else if (question.includes("sadness")||question.includes("sad")){
+    document.getElementById("work").innerHTML = sadness;
     document.getElementById('frametest').src = "https://www.youtube.com/embed/iVDnRV2YgZs?rel=0";
     document.getElementById("work").style.color = "red";
     document.getElementById("work").style.fontFamily= "Courier New";
@@ -749,7 +749,7 @@ function random_topic(){
     document.getElementById("work").style.color = "red";
 
 }else if (item===2){
-  document.getElementById("work").innerHTML = saddness;
+  document.getElementById("work").innerHTML = sadness;
   document.getElementById('frametest').src = "https://www.youtube.com/embed/iVDnRV2YgZs?rel=0";
   document.getElementById("work").style.color = "red";
 
