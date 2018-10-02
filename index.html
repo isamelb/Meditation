@@ -62,7 +62,7 @@ body {
 
 
     <button id ="rtopic" onclick = "random_topic()"  class="button button1">Random topic</button>
-    <button id ="mbutton" onclick="language_Function()" class="button button3" >العربية المغربية</button>
+    <button id ="mbutton" onclick="myFunction()" class="button button3" >العربية المغربية</button>
 
       <p id = "work"> <font face = "Courier New" > Hi, let me answer your questions about how to enhance your wellbeing</font></p>
 
@@ -261,7 +261,6 @@ var motivation ='Did you know that self approval and self love is \
 necessary to keep your motivation to acheive any goal in life \
 watch the video above that describes this point in more detail';
 
-
 var creativity ='Creativity is essential to human progress, it is the tool that makes life more interesting \
 in the video above i describe two cognitive tools to encourage it';
 
@@ -283,14 +282,16 @@ var arabic_intro ='في هاذا الموقع يمكنك أن تطرح أسئل�
   لكي تصبح سعيدا \
    '
 
-var arabic_sadness ='يمكن إزالة  عاطفة  الحزن بسهولة عن طريق التقنيات المذكورة في الفيديو أعلاه \
-\
-'
+   var arabic_sadness ='يمكن إزالة  عاطفة  الحزن بسهولة عن طريق التقنيات المذكورة في الفيديو أعلاه \
+ '
 
 
 
 
-function language_Function(){
+
+
+
+function myFunction(){
 
 
   if (document.getElementById("mbutton").innerHTML=="العربية المغربية"){
@@ -306,7 +307,6 @@ function language_Function(){
     document.getElementById("rtopic").innerHTML=" موضوع عشوائي"
     document.getElementById("work").innerHTML=""
     document.getElementById("medical").innerHTML=""
-    document.getElementById("vnumber").innerHTML= arabic_number_videos;
   //  document.getElementById("paper").innerHTML=""
     document.getElementById("sponsor").innerHTML=""
     document.getElementById('rtopic').setAttribute( "onclick", "javascript: arabic_random();" );
@@ -323,7 +323,6 @@ function language_Function(){
     document.getElementById("submit_ques").innerHTML="submit question"
     document.getElementById("tellrandom").innerHTML="Try a random topic"
     document.getElementById("rtopic").innerHTML="Random Topic"
-    document.getElementById("vnumber").innerHTML= number_videos;
     document.getElementById("work").innerHTML="Hi, let me answer your questions about how to enhance your wellbeing"
     document.getElementById("medical").innerHTML="Please seek medical help if you have thoughts of self harm, this advice is meant as an extra support"
     //document.getElementById("link").text ="I wrote a paper about how to become happy, you can read it below"
@@ -339,8 +338,8 @@ function arabic_random(){
 
 var items =range(1,3);
 
-arabic_number_videos = items.length;
-  document.getElementById("vnumber").innerHTML="number of videos available is: "+ arabic_number_videos;
+number_videos = items.length;
+  document.getElementById("vnumber").innerHTML="number of videos available is: "+ number_videos;
   document.getElementById("vnumber").style.color = "blue";
 var item = items[Math.floor(Math.random()*items.length)];
 
@@ -363,9 +362,8 @@ if (item ===1){
   document.getElementById('frametest').src = "https://www.youtube.com/embed/QFrychbQw0A?rel=0" ;
   document.getElementById("work").style.fontFamily= "Courier New";
   document.getElementById("work").style.color = "red";
+ }
 
-
-}
 
 };
 
@@ -389,14 +387,12 @@ function arabic_submit(){
     document.getElementById("work").style.fontFamily= "Courier New";
     document.getElementById("work").style.color = "red";
 
-
-  }else if (question.includes("الحزن")) {
+  }else if (question.includes("الحزن")){
     document.getElementById("work").innerHTML = arabic_sadness;
-    document.getElementById('frametest').src = "https://www.youtube.com/embed/aA9LB6zYcn8?rel=0";
+    document.getElementById('frametest').src = "https://www.youtube.com/embed/QFrychbQw0A?rel=0" ;
     document.getElementById("work").style.fontFamily= "Courier New";
     document.getElementById("work").style.color = "red";
-
-  }
+   }
 
 
 
@@ -729,11 +725,7 @@ function submitquestion(){
   document.getElementById("work").innerHTML = creativity;
   document.getElementById('frametest').src = "https://www.youtube.com/embed/PtbnerblMno?rel=0"  ;
   document.getElementById("work").style.fontFamily= "Courier New";
-
-
-
-
-}
+ }
 
 
 
@@ -1060,15 +1052,11 @@ document.getElementById("work").style.fontFamily= "Courier New";
 
 
 
-}else if (item ===42) {
+}else if (item ===41) {
   document.getElementById("work").innerHTML = creativity;
   document.getElementById('frametest').src = "https://www.youtube.com/embed/PtbnerblMno?rel=0"  ;
   document.getElementById("work").style.fontFamily= "Courier New";
-
-
-
-
-}
+ }
 
 
 
