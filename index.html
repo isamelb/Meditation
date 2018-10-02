@@ -62,7 +62,7 @@ body {
 
 
     <button id ="rtopic" onclick = "random_topic()"  class="button button1">Random topic</button>
-    <button id ="mbutton" onclick="myFunction()" class="button button3" >العربية المغربية</button>
+    <button id ="mbutton" onclick="language_Function()" class="button button3" >العربية المغربية</button>
 
       <p id = "work"> <font face = "Courier New" > Hi, let me answer your questions about how to enhance your wellbeing</font></p>
 
@@ -290,7 +290,7 @@ var arabic_sadness ='يمكن إزالة  عاطفة  الحزن بسهولة ع
 
 
 
-function myFunction(){
+function language_Function(){
 
 
   if (document.getElementById("mbutton").innerHTML=="العربية المغربية"){
@@ -306,6 +306,7 @@ function myFunction(){
     document.getElementById("rtopic").innerHTML=" موضوع عشوائي"
     document.getElementById("work").innerHTML=""
     document.getElementById("medical").innerHTML=""
+    document.getElementById("vnumber").innerHTML= arabic_number_videos;
   //  document.getElementById("paper").innerHTML=""
     document.getElementById("sponsor").innerHTML=""
     document.getElementById('rtopic').setAttribute( "onclick", "javascript: arabic_random();" );
@@ -322,6 +323,7 @@ function myFunction(){
     document.getElementById("submit_ques").innerHTML="submit question"
     document.getElementById("tellrandom").innerHTML="Try a random topic"
     document.getElementById("rtopic").innerHTML="Random Topic"
+    document.getElementById("vnumber").innerHTML= number_videos;
     document.getElementById("work").innerHTML="Hi, let me answer your questions about how to enhance your wellbeing"
     document.getElementById("medical").innerHTML="Please seek medical help if you have thoughts of self harm, this advice is meant as an extra support"
     //document.getElementById("link").text ="I wrote a paper about how to become happy, you can read it below"
@@ -337,8 +339,8 @@ function arabic_random(){
 
 var items =range(1,3);
 
-number_videos = items.length;
-  document.getElementById("vnumber").innerHTML="number of videos available is: "+ number_videos;
+arabic_number_videos = items.length;
+  document.getElementById("vnumber").innerHTML="number of videos available is: "+ arabic_number_videos;
   document.getElementById("vnumber").style.color = "blue";
 var item = items[Math.floor(Math.random()*items.length)];
 
