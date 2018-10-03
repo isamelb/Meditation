@@ -529,7 +529,7 @@ function submitquestion(){
 
 
 
-}else if (question.includes("mind")&& !(question.includes("modular"))){
+}else if (question.includes("mind")&& !(question.includes("modular"))&& !(question.includes("radio"))){
   document.getElementById("work").innerHTML = how_mind_works;
   document.getElementById('frametest').src = "https://www.youtube.com/embed/wnnJ3Otw1ek?rel=0";
   document.getElementById("work").style.color = "red";
