@@ -264,6 +264,9 @@ watch the video above that describes this point in more detail';
 var creativity ='Creativity is essential to human progress, it is the tool that makes life more interesting \
 in the video above i describe two cognitive tools to encourage it';
 
+var radio_mind ='Your mind is like a radio reciever, whatever you tune into \
+you will hear, so tune your mind to the right stations, watch the vide above for more explanation';
+
 
 var test_arabic ='عصام البوسرغيني: انا هو خالق هادا الموقع'
 
@@ -694,6 +697,7 @@ function submitquestion(){
 }else if (question.includes("pain")&& question.includes("suffering") ) {
   document.getElementById("work").innerHTML = optional_suffering;
   document.getElementById('frametest').src = "https://www.youtube.com/embed/BHoZGaDrreo?rel=0" ;
+  document.getElementById("work").style.color = "red";
   document.getElementById("work").style.fontFamily= "Courier New";
 
 
@@ -702,6 +706,7 @@ function submitquestion(){
 }else if (question.includes("name")&& question.includes("arabic") ) {
   document.getElementById("work").innerHTML = test_arabic;
   document.getElementById('frametest').src = "https://www.youtube.com/embed/NB6E6yACDpk?rel=0" ;
+  document.getElementById("work").style.color = "red";
   document.getElementById("work").style.fontFamily= "Courier New";
 
 
@@ -710,6 +715,7 @@ function submitquestion(){
 }else if (question.includes("senses")) {
   document.getElementById("work").innerHTML = senses;
   document.getElementById('frametest').src = "https://www.youtube.com/embed/4NS14kjswGI?rel=0"  ;
+  document.getElementById("work").style.color = "red";
   document.getElementById("work").style.fontFamily= "Courier New";
 
 
@@ -718,6 +724,7 @@ function submitquestion(){
 }else if (question.includes("motivation")) {
   document.getElementById("work").innerHTML = motivation;
   document.getElementById('frametest').src = "https://www.youtube.com/embed/wxHtXETD09s?rel=0"  ;
+  document.getElementById("work").style.color = "red";
   document.getElementById("work").style.fontFamily= "Courier New";
 
 
@@ -726,8 +733,17 @@ function submitquestion(){
 }else if (question.includes("creativity")) {
   document.getElementById("work").innerHTML = creativity;
   document.getElementById('frametest').src = "https://www.youtube.com/embed/PtbnerblMno?rel=0"  ;
+  document.getElementById("work").style.color = "red";
   document.getElementById("work").style.fontFamily= "Courier New";
- }
+
+
+
+}else if (question.includes("radio")&&(question.includes("mind"))) {
+   document.getElementById("work").innerHTML = radio_mind;
+   document.getElementById('frametest').src = "https://www.youtube.com/embed/FbSXanXRTXw?rel=0" ;
+   document.getElementById("work").style.color = "red";
+   document.getElementById("work").style.fontFamily= "Courier New";
+  }
 
 
 
@@ -759,7 +775,7 @@ function range(start, end) {
 
 function random_topic(){
 
-  var items =range(1,42);
+  var items =range(1,43);
 
   number_videos = items.length;
     document.getElementById("vnumber").innerHTML="number of videos available is: "+ number_videos;
@@ -1057,8 +1073,18 @@ document.getElementById("work").style.fontFamily= "Courier New";
 }else if (item ===42) {
   document.getElementById("work").innerHTML = creativity;
   document.getElementById('frametest').src = "https://www.youtube.com/embed/PtbnerblMno?rel=0"  ;
+  document.getElementById("work").style.color = "red";
   document.getElementById("work").style.fontFamily= "Courier New";
- }
+
+
+
+}else if (item ===43) {
+    document.getElementById("work").innerHTML = radio_mind;
+    document.getElementById('frametest').src = "https://www.youtube.com/embed/FbSXanXRTXw?rel=0"  ;
+    document.getElementById("work").style.color = "red";
+    document.getElementById("work").style.fontFamily= "Courier New";
+   }
+
 
 
 
