@@ -338,6 +338,7 @@ function ChangeLanguage(){
     document.getElementById("medical").innerHTML=""
     document.getElementById("vnumber").innerHTML=""
   //  document.getElementById("paper").innerHTML=""
+  document.getElementById("paper").style.visibility = "hidden";
     document.getElementById("sponsor").innerHTML=""
     document.getElementById('rtopic').setAttribute( "onclick", "javascript: arabic_random();" );
     document.getElementById('submit_ques').setAttribute( "onclick", "javascript: arabic_submit();" );
@@ -353,6 +354,7 @@ function ChangeLanguage(){
     document.getElementById("submit_ques").innerHTML="submit question"
     document.getElementById("tellrandom").innerHTML="Try a random topic"
     document.getElementById("rtopic").innerHTML="Random Topic"
+    document.getElementById("paper").style.visibility = "visible";
     document.getElementById("vnumber").innerHTML=""
     document.getElementById("work").innerHTML="Hi, let me answer your questions about how to enhance your wellbeing"
     document.getElementById("medical").innerHTML="Please seek medical help if you have thoughts of self harm, this advice is meant as an extra support"
