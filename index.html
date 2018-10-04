@@ -310,6 +310,10 @@ var arabic_intro ='في هاذا الموقع يمكنك أن تطرح أسئل�
  '
 
 
+ var arabic_laws_emotion ='قوانين العاطفة هي النظرية التي طورتها منذ خمس سنوات. شاهد الفيديو للحصول على ملخص \
+ \ '
+
+
 
 
 
@@ -363,7 +367,7 @@ function ChangeLanguage(){
 
 function arabic_random(){
 
-var items =range(1,4);
+var items =range(1,5);
 
 number_videos = items.length;
   document.getElementById("vnumber").innerHTML="number of videos available is: "+ number_videos;
@@ -397,7 +401,16 @@ if (item ===1){
    document.getElementById('frametest').src = "https://www.youtube.com/embed/LexjDvpv7Fw?rel=0";
    document.getElementById("work").style.fontFamily= "Courier New";
   // document.getElementById("work").style.color = "red";
-  }
+
+
+}else if (item===5){
+     document.getElementById("work").innerHTML = arabic_laws_emotion;
+     document.getElementById('frametest').src = "https://www.youtube.com/embed/1yeDAwFlPr8?rel=0"  ;
+     document.getElementById("work").style.fontFamily= "Courier New";
+    // document.getElementById("work").style.color = "red";
+
+
+    }
 
 
 };
@@ -435,7 +448,15 @@ function arabic_submit(){
      document.getElementById('frametest').src = "https://www.youtube.com/embed/LexjDvpv7Fw?rel=0";
      document.getElementById("work").style.fontFamily= "Courier New";
     // document.getElementById("work").style.color = "red";
-    }
+
+
+
+  }else if (question.includes("العاطفة")||(question.includes("قوانين"))){
+      document.getElementById("work").innerHTML = arabic_laws_emotion;
+      document.getElementById('frametest').src = "https://www.youtube.com/embed/1yeDAwFlPr8?rel=0"  ;
+      document.getElementById("work").style.fontFamily= "Courier New";
+     // document.getElementById("work").style.color = "red";
+     }
 
 
 
