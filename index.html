@@ -285,6 +285,10 @@ the human emotional system and how to deal with emotions, watch the video above 
 more info'
 
 
+var third_state ='The third state of being possible for a human being is not sleep nor being awake watch the video above for more \
+'
+
+
 var arabic_reality ='حاول أن تعيش في الواقع وليس في عالمك الشخصي ، شاهد الفيديو لمزيد من الشرح \
  '
 
@@ -634,7 +638,7 @@ function submitquestion(){
 
 
 
-}else if (question.includes("states")||question.includes("state")){
+}else if (question.includes("states")||question.includes("state")&& !(question.includes("meditative"))){
   document.getElementById("work").innerHTML = states;
   document.getElementById('frametest').src = "https://www.youtube.com/embed/cB7wHFOgFSk?rel=0" ;
 //  document.getElementById("work").style.color = "red";
@@ -818,7 +822,28 @@ function submitquestion(){
 
 
 
-}else if (question.length<1){
+}else if (question.includes("state")&& question.includes("meditative") ) {
+   document.getElementById("work").innerHTML = third_state;
+   document.getElementById('frametest').src = "https://www.youtube.com/embed/SoNRe-jLrzM?rel=0" ;
+   //document.getElementById("work").style.color = "red";
+   document.getElementById("work").style.fontFamily= "Courier New";
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+else if (question.length<1){
   document.getElementById("work").innerHTML ="please type a question in the box or try a random topic"
   ///document.getElementById("work").style.color = "green";
   document.getElementById("work").style.fontFamily= "Courier New";
@@ -843,7 +868,7 @@ function range(start, end) {
 
 function random_topic(){
 
-  var items =range(1,44);
+  var items =range(1,45);
 
   number_videos = items.length;
     document.getElementById("vnumber").innerHTML="number of videos available is: "+ number_videos;
@@ -963,7 +988,7 @@ document.getElementById("work").style.fontFamily= "Courier New";
 }else if (item===18){
 document.getElementById("work").innerHTML = anxiety;
 document.getElementById('frametest').src = "https://www.youtube.com/embed/vUE10reWX_g?rel=0" ;
-document.getElementById("work").style.color = "red";
+//document.getElementById("work").style.color = "red";
 document.getElementById("work").style.fontFamily= "Courier New";
 
 }else if (item===19){
@@ -1160,6 +1185,17 @@ document.getElementById("work").style.fontFamily= "Courier New";
       document.getElementById('frametest').src = "https://www.youtube.com/embed/8qQ45dH1vRg?rel=0" ;
       //document.getElementById("work").style.color = "red";
       document.getElementById("work").style.fontFamily= "Courier New";
+
+
+
+
+
+
+  }else if (item ===45) {
+     document.getElementById("work").innerHTML = third_state;
+     document.getElementById('frametest').src = "https://www.youtube.com/embed/SoNRe-jLrzM?rel=0"  ;
+     //document.getElementById("work").style.color = "red";
+     document.getElementById("work").style.fontFamily= "Courier New";
 
 
 
