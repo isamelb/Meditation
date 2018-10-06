@@ -342,6 +342,11 @@ var arabic_emotional_system ='يعمل النظام العاطفي طوال ال
  \
  '
 
+ var arabic_self_beleif ='التقة بالنفس هي سر النجاح في اي مشروع او مبادرة \
+الفديو اعلاه يشرح اكثر \
+  \
+ '
+
 
 
 
@@ -395,7 +400,7 @@ function ChangeLanguage(){
 
 function arabic_random(){
 
-var items =range(1,6);
+var items =range(1,7);
 
 number_videos = items.length;
   document.getElementById("vnumber").innerHTML="number of videos available is: "+ number_videos;
@@ -444,8 +449,14 @@ if (item ===1){
          document.getElementById("work").style.fontFamily= "Courier New";
         // document.getElementById("work").style.color = "red";
 
+  }else if (item===7){
+           document.getElementById("work").innerHTML = arabic_self_beleif;
+           document.getElementById('frametest').src = "https://www.youtube.com/embed/TKTro04qvK8?rel=0" ;
+           document.getElementById("work").style.fontFamily= "Courier New";
+          // document.getElementById("work").style.color = "red";
 
-        }
+
+          }
 
 
 };
@@ -498,7 +509,14 @@ function arabic_submit(){
          document.getElementById('frametest').src = "https://www.youtube.com/embed/F7FmyQyo8SA?rel=0"  ;
          document.getElementById("work").style.fontFamily= "Courier New";
         // document.getElementById("work").style.color = "red";
-        }
+
+
+  }else if (question.includes("بالنفس")||(question.includes("التقة"))){
+        document.getElementById("work").innerHTML = arabic_self_beleif;
+        document.getElementById('frametest').src = "https://www.youtube.com/embed/TKTro04qvK8?rel=0"  ;
+        document.getElementById("work").style.fontFamily= "Courier New";
+       // document.getElementById("work").style.color = "red";
+       }
 
 
 
