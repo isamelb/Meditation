@@ -373,6 +373,12 @@ var arabic_emotional_system ='يعمل النظام العاطفي طوال ال
  '
 
 
+ var arabic_awarness ='ان الفهم الشامل لما هو الوعي يمكنك من الحصول على  \
+ الحرية ن برمجت اللمجتمع \
+ شاهد الفديو للمزيدمن المعلومات \
+ '
+
+
 
 
 function ChangeLanguage(){
@@ -428,7 +434,7 @@ function ChangeLanguage(){
 
 function arabic_random(){
 
-var items =range(1,12);
+var items =range(1,13);
 
 number_videos = items.length;
   document.getElementById("vnumber").innerHTML="number of videos available is: "+ number_videos;
@@ -515,6 +521,13 @@ if (item ===1){
   }else if (item===12){
            document.getElementById("work").innerHTML = arabic_surrender;
            document.getElementById('frametest').src = "https://www.youtube.com/embed/8_fvn_jTIdM?rel=0" ;
+           //document.getElementById("work").style.fontFamily= "Courier New";
+          // document.getElementById("work").style.color = "red";
+
+
+  }else if (item===13){
+           document.getElementById("work").innerHTML = arabic_awarness;
+           document.getElementById('frametest').src = "https://www.youtube.com/embed/jMvVXfAkyNk?rel=0" ;
            //document.getElementById("work").style.fontFamily= "Courier New";
           // document.getElementById("work").style.color = "red";
 
@@ -612,7 +625,12 @@ function arabic_submit(){
              document.getElementById('frametest').src = "https://www.youtube.com/embed/8_fvn_jTIdM?rel=0" ;
             // document.getElementById("work").style.fontFamily= "Courier New";
             // document.getElementById("work").style.color = "red";
-        }
+        }else if (question.includes("الوعي")){
+              document.getElementById("work").innerHTML = arabic_awarness;
+              document.getElementById('frametest').src = "https://www.youtube.com/embed/jMvVXfAkyNk?rel=0" ;
+             // document.getElementById("work").style.fontFamily= "Courier New";
+             // document.getElementById("work").style.color = "red";
+         }
 
 
 
