@@ -377,9 +377,9 @@ var arabic_emotional_system ='يعمل النظام العاطفي طوال ال
  '
 
 
- var arabic_awarness ='ان الفهم الشامل لما هو الوعي يمكنك من الحصول على  \
- الحرية ن برمجت اللمجتمع \
- شاهد الفديو للمزيدمن المعلومات \
+ var arabic_awarness ='ان الفهم الشامل لما هو الوعي يمكنك من الحصول  \
+على الحرية من برمجة المجتمع \
+ شاهد الفديو للمزيد من المعلومات  \
  '
 
 
@@ -389,6 +389,10 @@ var arabic_emotional_system ='يعمل النظام العاطفي طوال ال
  '
 
  var arabic_strength ='استخدم قوة الحب لتعزيز قدراتك الإبداعية وبالتالي تصبح ثريًا \
+ \
+ '
+
+ var arabic_desire ='الرغبة هي مصدر كل المعاناة ، عندما يكون لديك رغبة أقل لديك معاناة أقل ، شاهد الفيديو أعلاه للحصول على مزيد من المعلومات \
  \
  '
 
@@ -448,7 +452,7 @@ function ChangeLanguage(){
 
 function arabic_random(){
 
-var items =range(1,15);
+var items =range(1,16);
 
 number_videos = items.length;
   document.getElementById("vnumber").innerHTML="number of videos available is: "+ number_videos;
@@ -556,6 +560,13 @@ if (item ===1){
   }else if (item===15){
            document.getElementById("work").innerHTML = arabic_strength;
            document.getElementById('frametest').src = "https://www.youtube.com/embed/_dU5CRcx2OI?rel=0"  ;
+           //document.getElementById("work").style.fontFamily= "Courier New";
+          // document.getElementById("work").style.color = "red";
+
+
+  }else if (item===16){
+           document.getElementById("work").innerHTML = arabic_desire;
+           document.getElementById('frametest').src = "https://www.youtube.com/embed/Mr_wYCDcAoM?rel=0"  ;
            //document.getElementById("work").style.fontFamily= "Courier New";
           // document.getElementById("work").style.color = "red";
 
@@ -672,7 +683,13 @@ function arabic_submit(){
                 document.getElementById('frametest').src = "https://www.youtube.com/embed/_dU5CRcx2OI?rel=0" ;
                // document.getElementById("work").style.fontFamily= "Courier New";
                // document.getElementById("work").style.color = "red";
-           }
+           }else if (question.includes("الرغبة")){
+                 document.getElementById("work").innerHTML = arabic_desire;
+                 document.getElementById('frametest').src = "https://www.youtube.com/embed/Mr_wYCDcAoM?rel=0" ;
+                // document.getElementById("work").style.fontFamily= "Courier New";
+                // document.getElementById("work").style.color = "red";
+            }
+
 
 
 
