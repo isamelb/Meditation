@@ -317,6 +317,10 @@ var all_strength_love ='All power and strength comes from love and not fear \
 watch this video to harness this law to become strong'
 
 
+var three_brains=' We all have three brains within us guiding our behaviour, watch the video above \
+for an explanation'
+
+
 var arabic_reality ='حاول أن تعيش في الواقع وليس في عالمك الشخصي ، شاهد الفيديو لمزيد من الشرح \
  '
 
@@ -1068,9 +1072,20 @@ function submitquestion(){
 
 
 
-}else if (question.includes("power")|| question.includes("strength") ||(question.includes("strong"))) {
+}else if (question.includes("power")|| (question.includes("strength")) ||(question.includes("strong"))) {
    document.getElementById("work").innerHTML = all_strength_love;
    document.getElementById('frametest').src = "https://www.youtube.com/embed/Imdut_yz3Qc?rel=0" ;
+   //document.getElementById("work").style.color = "red";
+  // document.getElementById("work").style.fontFamily= "Courier New";
+
+
+
+
+
+
+}else if (question.includes("brains")||(question.includes("brain"))) {
+   document.getElementById("work").innerHTML = three_brains;
+   document.getElementById('frametest').src = "https://www.youtube.com/embed/kF7BE9vPYts?rel=0";
    //document.getElementById("work").style.color = "red";
   // document.getElementById("work").style.fontFamily= "Courier New";
 
@@ -1114,7 +1129,7 @@ function range(start, end) {
 
 function random_topic(){
 
-  var items =range(1,47);
+  var items =range(1,48);
 
   number_videos = items.length;
     document.getElementById("vnumber").innerHTML="number of videos available is: "+ number_videos;
@@ -1465,7 +1480,14 @@ document.getElementById('frametest').src = "https://www.youtube.com/embed/vUE10r
      document.getElementById('frametest').src = "https://www.youtube.com/embed/Imdut_yz3Qc?rel=0" ;
      //document.getElementById("work").style.color = "red";
     // document.getElementById("work").style.fontFamily= "Courier New";
-"https://www.youtube.com/embed/Imdut_yz3Qc?rel=0"
+
+
+  }else if (item ===48) {
+     document.getElementById("work").innerHTML = three_brains;
+     document.getElementById('frametest').src = "https://www.youtube.com/embed/kF7BE9vPYts?rel=0" ;
+     //document.getElementById("work").style.color = "red";
+    // document.getElementById("work").style.fontFamily= "Courier New";
+
 
   }
 
