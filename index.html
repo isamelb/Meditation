@@ -313,6 +313,10 @@ var mind_matters ='The mind is what matters when it comes to how we feel \
 watch the video above for a summary of this idea'
 
 
+var all_strength_love ='All power and strength comes from love and not fear \
+watch this video to harness this law to become srong'
+
+
 var arabic_reality ='حاول أن تعيش في الواقع وليس في عالمك الشخصي ، شاهد الفيديو لمزيد من الشرح \
  '
 
@@ -1029,6 +1033,17 @@ function submitquestion(){
 
 
 
+}else if (question.includes("love")|| question.includes("strength") ) {
+   document.getElementById("work").innerHTML = all_strength_love;
+   document.getElementById('frametest').src = "https://www.youtube.com/embed/Imdut_yz3Qc?rel=0" ;
+   //document.getElementById("work").style.color = "red";
+  // document.getElementById("work").style.fontFamily= "Courier New";
+
+
+
+
+
+
 }
 
 
@@ -1064,7 +1079,7 @@ function range(start, end) {
 
 function random_topic(){
 
-  var items =range(1,46);
+  var items =range(1,47);
 
   number_videos = items.length;
     document.getElementById("vnumber").innerHTML="number of videos available is: "+ number_videos;
@@ -1409,6 +1424,13 @@ document.getElementById('frametest').src = "https://www.youtube.com/embed/vUE10r
 
 
 
+
+  }else if (item ===47) {
+     document.getElementById("work").innerHTML = all_strength_love;
+     document.getElementById('frametest').src = "https://www.youtube.com/embed/Imdut_yz3Qc?rel=0" ;
+     //document.getElementById("work").style.color = "red";
+    // document.getElementById("work").style.fontFamily= "Courier New";
+"https://www.youtube.com/embed/Imdut_yz3Qc?rel=0"
 
   }
 
