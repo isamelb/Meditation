@@ -402,6 +402,11 @@ var arabic_emotional_system ='يعمل النظام العاطفي طوال ال
 var arabic_brains ='يتم وصف العقول الثلاثة التي تحكم حياتنا في الفيديو أعلاه \
  \
 '
+var arabic_addiction= 'ادمان المخدرات هو لعنة رهيبة \
+شاهد الفديو اعلاه للتخلص من هذه العبودية \
+ \
+'
+
 
 
 
@@ -458,7 +463,7 @@ function ChangeLanguage(){
 
 function arabic_random(){
 
-var items =range(1,17);
+var items =range(1,18);
 
 number_videos = items.length;
   document.getElementById("vnumber").innerHTML="number of videos available is: "+ number_videos;
@@ -584,7 +589,15 @@ if (item ===1){
           // document.getElementById("work").style.color = "red";
 
 
+  }else if (item===18){
+           document.getElementById("work").innerHTML = arabic_addiction;
+           document.getElementById('frametest').src = "https://www.youtube.com/embed/UnKUndu3dU4?rel=0";
+           //document.getElementById("work").style.fontFamily= "Courier New";
+          // document.getElementById("work").style.color = "red";
+
+
   }
+
 
 
 };
@@ -708,7 +721,12 @@ function arabic_submit(){
                   document.getElementById('frametest').src = "https://www.youtube.com/embed/HiwZF6KAj6o?rel=0" ;
                  // document.getElementById("work").style.fontFamily= "Courier New";
                  // document.getElementById("work").style.color = "red";
-             }
+             }else if (question.includes("المخدرات")||(question.includes("ادمان"))){
+                   document.getElementById("work").innerHTML = arabic_addiction;
+                   document.getElementById('frametest').src ="https://www.youtube.com/embed/UnKUndu3dU4?rel=0" ;
+                  // document.getElementById("work").style.fontFamily= "Courier New";
+                  // document.getElementById("work").style.color = "red";
+              }
 
 
 
