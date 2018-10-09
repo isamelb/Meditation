@@ -321,6 +321,12 @@ var three_brains=' We all have three brains within us guiding our behaviour, wat
 for an explanation'
 
 
+var addiction ='Being addicted to psychoactive drugs is a terrible curse \
+let me show you how to free yourself from this slavery'
+
+
+
+
 var arabic_reality ='حاول أن تعيش في الواقع وليس في عالمك الشخصي ، شاهد الفيديو لمزيد من الشرح \
  '
 
@@ -1128,6 +1134,17 @@ function submitquestion(){
 
 
 
+}else if (question.includes("addiction")||(question.includes("drugs"))) {
+   document.getElementById("work").innerHTML = addiction;
+   document.getElementById('frametest').src = "https://www.youtube.com/embed/kXykQx7R5eg?rel=0"   ;
+   //document.getElementById("work").style.color = "red";
+  // document.getElementById("work").style.fontFamily= "Courier New";
+
+
+
+
+
+
 }
 
 
@@ -1163,7 +1180,7 @@ function range(start, end) {
 
 function random_topic(){
 
-  var items =range(1,48);
+  var items =range(1,49);
 
   number_videos = items.length;
     document.getElementById("vnumber").innerHTML="number of videos available is: "+ number_videos;
@@ -1521,6 +1538,17 @@ document.getElementById('frametest').src = "https://www.youtube.com/embed/vUE10r
      document.getElementById('frametest').src = "https://www.youtube.com/embed/kF7BE9vPYts?rel=0" ;
      //document.getElementById("work").style.color = "red";
     // document.getElementById("work").style.fontFamily= "Courier New";
+
+
+  }else if (item ===49) {
+     document.getElementById("work").innerHTML = addiction;
+     document.getElementById('frametest').src = "https://www.youtube.com/embed/kXykQx7R5eg?rel=0"   ;
+     //document.getElementById("work").style.color = "red";
+    // document.getElementById("work").style.fontFamily= "Courier New";
+
+
+
+
 
 
   }
