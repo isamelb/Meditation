@@ -325,6 +325,10 @@ var addiction ='Being addicted to psychoactive drugs is a terrible curse \
 let me show you how to free yourself from this slavery'
 
 
+var injustice ='Sometimes in life we encounter injustice towards ourselves or our loved ones \
+watch the video where I show how to deal with injustice without loosing your peace of mind'
+
+
 
 
 var arabic_reality ='حاول أن تعيش في الواقع وليس في عالمك الشخصي ، شاهد الفيديو لمزيد من الشرح \
@@ -412,7 +416,9 @@ var arabic_addiction= 'ادمان المخدرات هو لعنة رهيبة \
 شاهد الفديو اعلاه للتخلص من هذه العبودية \
  \
 '
-
+var arabic_justice ='عندما نحتاج إلى استعادة العدالة ، اتبع هذه الخطوات للحصول على القوة العقلية للقتال من أجل الصواب \
+ \
+'
 
 
 
@@ -469,7 +475,7 @@ function ChangeLanguage(){
 
 function arabic_random(){
 
-var items =range(1,18);
+var items =range(1,19);
 
 number_videos = items.length;
   document.getElementById("vnumber").innerHTML="number of videos available is: "+ number_videos;
@@ -598,6 +604,13 @@ if (item ===1){
   }else if (item===18){
            document.getElementById("work").innerHTML = arabic_addiction;
            document.getElementById('frametest').src = "https://www.youtube.com/embed/UnKUndu3dU4?rel=0";
+           //document.getElementById("work").style.fontFamily= "Courier New";
+          // document.getElementById("work").style.color = "red";
+
+
+  }else if (item===19){
+           document.getElementById("work").innerHTML = arabic_justice;
+           document.getElementById('frametest').src = "https://www.youtube.com/embed/xYeW0olgZCg?rel=0"  ;
            //document.getElementById("work").style.fontFamily= "Courier New";
           // document.getElementById("work").style.color = "red";
 
@@ -732,7 +745,14 @@ function arabic_submit(){
                    document.getElementById('frametest').src ="https://www.youtube.com/embed/UnKUndu3dU4?rel=0" ;
                   // document.getElementById("work").style.fontFamily= "Courier New";
                   // document.getElementById("work").style.color = "red";
-              }
+
+
+              }else if (question.includes("العدالة")||(question.includes("الضلم"))){
+                    document.getElementById("work").innerHTML = arabic_justice;
+                    document.getElementById('frametest').src =  "https://www.youtube.com/embed/xYeW0olgZCg?rel=0" ;
+                   // document.getElementById("work").style.fontFamily= "Courier New";
+                   // document.getElementById("work").style.color = "red";
+               }
 
 
 
@@ -1145,6 +1165,17 @@ function submitquestion(){
 
 
 
+}else if (question.includes("injustice")) {
+   document.getElementById("work").innerHTML = injustice;
+   document.getElementById('frametest').src = "https://www.youtube.com/embed/ChW3rvRgLfA?rel=0"   ;
+   //document.getElementById("work").style.color = "red";
+  // document.getElementById("work").style.fontFamily= "Courier New";
+
+
+
+
+
+
 }
 
 
@@ -1180,7 +1211,7 @@ function range(start, end) {
 
 function random_topic(){
 
-  var items =range(1,49);
+  var items =range(1,50);
 
   number_videos = items.length;
     document.getElementById("vnumber").innerHTML="number of videos available is: "+ number_videos;
@@ -1546,6 +1577,16 @@ document.getElementById('frametest').src = "https://www.youtube.com/embed/vUE10r
      //document.getElementById("work").style.color = "red";
     // document.getElementById("work").style.fontFamily= "Courier New";
 
+
+
+
+
+
+  }else if (item ===50) {
+     document.getElementById("work").innerHTML = injustice;
+     document.getElementById('frametest').src = "https://www.youtube.com/embed/ChW3rvRgLfA?rel=0"   ;
+     //document.getElementById("work").style.color = "red";
+    // document.getElementById("work").style.fontFamily= "Courier New";
 
 
 
