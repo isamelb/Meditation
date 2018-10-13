@@ -431,6 +431,13 @@ var arabic_panic ='اضطرابات القلق و نوبات الهلع قضية
 شاهد الفديوا اعلاه لتتخلص منها \
  \
 '
+
+
+
+var arabic_shame='هنا اشرح طريقة تقنية للتعامل مع الخجل  \
+شاهد الفديو لمعلومات اكثر \
+ \
+'
 function ChangeLanguage(){
 
 
@@ -484,7 +491,7 @@ function ChangeLanguage(){
 
 function arabic_random(){
 
-var items =range(1,22);
+var items =range(1,23);
 
 number_videos = items.length;
   document.getElementById("vnumber").innerHTML="number of videos available is: "+ number_videos;
@@ -645,6 +652,13 @@ if (item ===1){
           // document.getElementById("work").style.color = "red";
 
 
+  }else if (item===23){
+           document.getElementById("work").innerHTML = arabic_shame;
+           document.getElementById('frametest').src = "https://www.youtube.com/embed/m2MBphvdZlU?rel=0" ;
+           //document.getElementById("work").style.fontFamily= "Courier New";
+          // document.getElementById("work").style.color = "red";
+
+
   }
 
 
@@ -796,13 +810,12 @@ function arabic_submit(){
                       document.getElementById('frametest').src =  "https://www.youtube.com/embed/s9kB2YHzB-g?rel=0"  ;
                      // document.getElementById("work").style.fontFamily= "Courier New";
                      // document.getElementById("work").style.color = "red";
-                 }else if (question.includes("الهلع")||(question.includes("القلق"))){
+                 }else if (question.includes("الحشومة")||(question.includes("الخجل"))){
                        document.getElementById("work").innerHTML = arabic_panic;
-                       document.getElementById('frametest').src =  "https://www.youtube.com/embed/7IZwv6hglKQ?rel=0"  ;
+                       document.getElementById('frametest').src =  "https://www.youtube.com/embed/m2MBphvdZlU?rel=0"  ;
                       // document.getElementById("work").style.fontFamily= "Courier New";
                       // document.getElementById("work").style.color = "red";
                   }
-
 
 
 
