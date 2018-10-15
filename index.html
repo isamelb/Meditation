@@ -338,7 +338,9 @@ let me show you how to free yourself from this slavery'
 var injustice ='Sometimes in life we encounter injustice towards ourselves or our loved ones \
 watch the video where I show how to deal with injustice without loosing your peace of mind'
 
-
+var immunity ='The immune and regenerative systems keep us healthy, free from disease and repair \
+our bodies, learn to kickstart them with the methods describes in the video above \
+'
 
 
 var arabic_reality ='حاول أن تعيش في الواقع وليس في عالمك الشخصي ، شاهد الفيديو لمزيد من الشرح \
@@ -452,6 +454,11 @@ var arabic_shame='هنا اشرح طريقة تقنية للتعامل مع ال
 var arabic_calm='اشرح في هاذا الفديو اعلاه كيف ترجع هدوء الجسم و العقل \
  \
 '
+  var arabic_immunity =' اشرح في الفديو اعلاه علاقة الجهاز العاطفي مع جهاز المناعة \
+   \
+  '
+
+
 
 function ChangeLanguage(){
 
@@ -506,7 +513,7 @@ function ChangeLanguage(){
 
 function arabic_random(){
 
-var items =range(1,24);
+var items =range(1,25);
 
 number_videos = items.length;
   document.getElementById("vnumber").innerHTML="number of videos available is: "+ number_videos;
@@ -677,6 +684,13 @@ if (item ===1){
   }else if (item===24){
            document.getElementById("work").innerHTML = arabic_calm;
            document.getElementById('frametest').src = "https://www.youtube.com/embed/MzH-iNzmfbs?rel=0"  ;
+           //document.getElementById("work").style.fontFamily= "Courier New";
+          // document.getElementById("work").style.color = "red";
+
+
+  }else if (item===25){
+           document.getElementById("work").innerHTML = arabic_immunity;
+           document.getElementById('frametest').src = "https://www.youtube.com/embed/w5q6YpglHr8?rel=0"   ;
            //document.getElementById("work").style.fontFamily= "Courier New";
           // document.getElementById("work").style.color = "red";
 
@@ -854,8 +868,14 @@ function arabic_submit(){
                         document.getElementById('frametest').src = "https://www.youtube.com/embed/MzH-iNzmfbs?rel=0"   ;
                        // document.getElementById("work").style.fontFamily= "Courier New";
                        // document.getElementById("work").style.color = "red";
-                   }
 
+
+                   }else if (question.includes("المناعة")){
+                         document.getElementById("work").innerHTML = arabic_immunity;
+                         document.getElementById('frametest').src = "https://www.youtube.com/embed/w5q6YpglHr8?rel=0"   ;
+                        // document.getElementById("work").style.fontFamily= "Courier New";
+                        // document.getElementById("work").style.color = "red";
+                    }
 
 
 
@@ -1277,6 +1297,17 @@ function submitquestion(){
 
 
 
+}else if (question.includes("immunity")) {
+   document.getElementById("work").innerHTML = immunity;
+   document.getElementById('frametest').src = "https://www.youtube.com/embed/4rukg_Akccc?rel=0"   ;
+   //document.getElementById("work").style.color = "red";
+  // document.getElementById("work").style.fontFamily= "Courier New";
+
+
+
+
+
+
 }
 
 
@@ -1312,7 +1343,7 @@ function range(start, end) {
 
 function random_topic(){
 
-  var items =range(1,50);
+  var items =range(1,51);
 
   number_videos = items.length;
     document.getElementById("vnumber").innerHTML="number of videos available is: "+ number_videos;
@@ -1693,7 +1724,18 @@ document.getElementById('frametest').src = "https://www.youtube.com/embed/vUE10r
 
 
 
+  }else if (item ===50) {
+     document.getElementById("work").innerHTML = immunity;
+     document.getElementById('frametest').src = "https://www.youtube.com/embed/4rukg_Akccc?rel=0"   ;
+     //document.getElementById("work").style.color = "red";
+    // document.getElementById("work").style.fontFamily= "Courier New";
+
+
+
+
+
   }
+
 
 
 
