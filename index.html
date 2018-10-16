@@ -343,6 +343,13 @@ our bodies, learn to kickstart them with the methods described in the video abov
 '
 
 
+var words ='Words have the power to program our minds \
+be careful what words you expose yourself to \
+including self talk and negative news \
+only expose yourself to words that are going to motivate you to become \
+great, watch the vide above for more info \
+'
+
 var arabic_reality ='حاول أن تعيش في الواقع وليس في عالمك الشخصي ، شاهد الفيديو لمزيد من الشرح \
  '
 
@@ -1324,6 +1331,13 @@ function submitquestion(){
 
 
 
+}else if (question.includes("words") || question.includes('program')){
+  document.getElementById("work").innerHTML = words;
+  document.getElementById('frametest').src = "https://www.youtube.com/embed/VlHFvafjHmY?rel=0";
+  //document.getElementById("work").style.color = "red";
+//  document.getElementById("work").style.fontFamily= "Courier New";
+
+
 }
 
 
@@ -1359,7 +1373,7 @@ function range(start, end) {
 
 function random_topic(){
 
-  var items =range(1,51);
+  var items =range(1,52);
 
   number_videos = items.length;
     document.getElementById("vnumber").innerHTML="number of videos available is: "+ number_videos;
@@ -1740,9 +1754,19 @@ document.getElementById('frametest').src = "https://www.youtube.com/embed/vUE10r
 
 
 
-  }else if (item ===50) {
+  }else if (item ===51) {
      document.getElementById("work").innerHTML = immunity;
      document.getElementById('frametest').src = "https://www.youtube.com/embed/4rukg_Akccc?rel=0"   ;
+     //document.getElementById("work").style.color = "red";
+    // document.getElementById("work").style.fontFamily= "Courier New";
+
+
+
+
+
+  }else if (item ===52) {
+     document.getElementById("work").innerHTML = work;
+     document.getElementById('frametest').src = "https://www.youtube.com/embed/VlHFvafjHmY?rel=0"  ;
      //document.getElementById("work").style.color = "red";
     // document.getElementById("work").style.fontFamily= "Courier New";
 
