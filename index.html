@@ -457,7 +457,9 @@ var arabic_calm='اشرح في هاذا الفديو اعلاه كيف ترجع 
   var arabic_immunity =' اشرح في الفديو اعلاه علاقة الجهاز العاطفي مع جهاز المناعة \
    \
   '
-
+var arabic_words =' ان الكلمات التي تدخل دماغنا تبرمجنا  \
+شاهد الفديو اعلاه لمعلومات اكثر \
+'
 
 
 function ChangeLanguage(){
@@ -513,7 +515,7 @@ function ChangeLanguage(){
 
 function arabic_random(){
 
-var items =range(1,25);
+var items =range(1,26);
 
 number_videos = items.length;
   document.getElementById("vnumber").innerHTML="number of videos available is: "+ number_videos;
@@ -695,6 +697,13 @@ if (item ===1){
           // document.getElementById("work").style.color = "red";
 
 
+  }else if (item===26){
+           document.getElementById("work").innerHTML = arabic_words;
+           document.getElementById('frametest').src = "https://www.youtube.com/embed/Cx4KiTSK6DU?rel=0"  ;
+           //document.getElementById("work").style.fontFamily= "Courier New";
+          // document.getElementById("work").style.color = "red";
+
+
   }
 
 
@@ -847,7 +856,7 @@ function arabic_submit(){
                      // document.getElementById("work").style.fontFamily= "Courier New";
                      // document.getElementById("work").style.color = "red";
 
-                   }else if (question.includes("الهلع")||(question.includes("القلق"))){
+                 }else if (question.includes("الهلع")||(question.includes("القلق"))){
                            document.getElementById("work").innerHTML = arabic_panic;
                            document.getElementById('frametest').src =  "https://www.youtube.com/embed/7IZwv6hglKQ?rel=0"  ;
                           // document.getElementById("work").style.fontFamily= "Courier New";
@@ -863,19 +872,26 @@ function arabic_submit(){
                       // document.getElementById("work").style.color = "red";
 
 
-                  }else if (question.includes("الراحة")||(question.includes("الهدوء"))){
+                }else if (question.includes("الراحة")||(question.includes("الهدوء"))){
                         document.getElementById("work").innerHTML = arabic_calm;
                         document.getElementById('frametest').src = "https://www.youtube.com/embed/MzH-iNzmfbs?rel=0"   ;
                        // document.getElementById("work").style.fontFamily= "Courier New";
                        // document.getElementById("work").style.color = "red";
 
 
-                   }else if (question.includes("المناعة")){
+                 }else if (question.includes("المناعة")){
                          document.getElementById("work").innerHTML = arabic_immunity;
                          document.getElementById('frametest').src = "https://www.youtube.com/embed/w5q6YpglHr8?rel=0"   ;
                         // document.getElementById("work").style.fontFamily= "Courier New";
                         // document.getElementById("work").style.color = "red";
-                    }
+
+
+                  }else if (question.includes("البرمجة")||(question.includes("الكلمات"))){
+                            document.getElementById("work").innerHTML = arabic_words;
+                            document.getElementById('frametest').src = "https://www.youtube.com/embed/Cx4KiTSK6DU?rel=0"  ;
+                           // document.getElementById("work").style.fontFamily= "Courier New";
+                           // document.getElementById("work").style.color = "red";
+                       }
 
 
 
