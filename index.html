@@ -360,6 +360,11 @@ only expose yourself to words that are going to motivate you to become \
 great, watch the video above for more info \
 '
 
+
+var limbic ='Meditation can be viewed as a way to control the limbic system by the use of the \
+neocortex, watch the video above for more information'
+
+
 var arabic_reality ='حاول أن تعيش في الواقع وليس في عالمك الشخصي ، شاهد الفيديو لمزيد من الشرح \
  '
 
@@ -1349,6 +1354,13 @@ function submitquestion(){
 //  document.getElementById("work").style.fontFamily= "Courier New";
 
 
+}else if (question.includes("limbic") ){
+  document.getElementById("work").innerHTML = limbic;
+  document.getElementById('frametest').src = "https://www.youtube.com/embed/d5ks53uKi0U?rel=0" ;
+  //document.getElementById("work").style.color = "red";
+//  document.getElementById("work").style.fontFamily= "Courier New";
+
+
 }
 
 
@@ -1384,7 +1396,7 @@ function range(start, end) {
 
 function random_topic(){
 
-  var items =range(1,52);
+  var items =range(1,53);
 
   number_videos = items.length;
     document.getElementById("vnumber").innerHTML="number of videos available is: "+ number_videos;
@@ -1778,6 +1790,16 @@ document.getElementById('frametest').src = "https://www.youtube.com/embed/vUE10r
   }else if (item ===52) {
      document.getElementById("work").innerHTML = work;
      document.getElementById('frametest').src = "https://www.youtube.com/embed/VlHFvafjHmY?rel=0"  ;
+     //document.getElementById("work").style.color = "red";
+    // document.getElementById("work").style.fontFamily= "Courier New";
+
+
+
+
+
+  }else if (item ===53) {
+     document.getElementById("work").innerHTML = work;
+     document.getElementById('frametest').src = "https://www.youtube.com/embed/d5ks53uKi0U?rel=0"   ;
      //document.getElementById("work").style.color = "red";
     // document.getElementById("work").style.fontFamily= "Courier New";
 
