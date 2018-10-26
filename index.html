@@ -486,7 +486,9 @@ var arabic_words =' ان الكلمات التي تدخل دماغنا تبرم�
 شاهد الفديو اعلاه للمزيد من المعلومات \
 \
   '
-
+var arabic_anger ='في الفديو اعلاه اكشف عن طرق تقنية للتخلص من الغضب \
+ \
+'
 function ChangeLanguage(){
 
 
@@ -544,7 +546,7 @@ function ChangeLanguage(){
 
 function arabic_random(){
 
-var items =range(1,27);
+var items =range(1,28);
 
 number_videos = items.length;
   document.getElementById("vnumber").innerHTML="number of videos available is: "+ number_videos;
@@ -736,6 +738,13 @@ if (item ===1){
   }else if (item===27){
            document.getElementById("work").innerHTML = arabic_wellbeing
            document.getElementById('frametest').src = "https://www.youtube.com/embed/efTCgT9sWdU?rel=0"   ;
+           //document.getElementById("work").style.fontFamily= "Courier New";
+          // document.getElementById("work").style.color = "red";
+
+
+  }else if (item===28){
+           document.getElementById("work").innerHTML = arabic_anger
+           document.getElementById('frametest').src ="https://www.youtube.com/embed/kGcglhSmRgA?rel=0"   ;
            //document.getElementById("work").style.fontFamily= "Courier New";
           // document.getElementById("work").style.color = "red";
 
@@ -932,7 +941,15 @@ function arabic_submit(){
                                document.getElementById('frametest').src = "https://www.youtube.com/embed/efTCgT9sWdU?rel=0"  ;
                               // document.getElementById("work").style.fontFamily= "Courier New";
                               // document.getElementById("work").style.color = "red";
-                            }
+
+
+
+                  }else if (question.includes("الغضب")){
+                                document.getElementById("work").innerHTML = arabic_anger;
+                                document.getElementById('frametest').src = "https://www.youtube.com/embed/kGcglhSmRgA?rel=0" ;
+                                 // document.getElementById("work").style.fontFamily= "Courier New";
+                                 // document.getElementById("work").style.color = "red";
+                                       }
 
 
 
