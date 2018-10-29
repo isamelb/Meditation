@@ -364,6 +364,10 @@ great, watch the video above for more info \
 var limbic ='Meditation can be viewed as a way to control the limbic system by the use of the \
 neocortex, watch the video above for more information'
 
+var learning ='In the video above I talk about the link between love \
+and learning and reveal thre meditations that can help you get more concentration to enable \
+focus and facilitate learning'
+
 
 var arabic_reality ='حاول أن تعيش في الواقع وليس في عالمك الشخصي ، شاهد الفيديو لمزيد من الشرح \
  '
@@ -1396,6 +1400,17 @@ function submitquestion(){
 //  document.getElementById("work").style.fontFamily= "Courier New";
 
 
+}else if (question.includes("learning")|| (question.includes("focus"))) {
+   document.getElementById("work").innerHTML = learning;
+   document.getElementById('frametest').src = "https://www.youtube.com/embed/aheVpYIXb2c?rel=0" ;
+   //document.getElementById("work").style.color = "red";
+  // document.getElementById("work").style.fontFamily= "Courier New";
+
+
+
+
+
+
 }
 
 
@@ -1431,7 +1446,7 @@ function range(start, end) {
 
 function random_topic(){
 
-  var items =range(1,53);
+  var items =range(1,54);
 
   number_videos = items.length;
     document.getElementById("vnumber").innerHTML="number of videos available is: "+ number_videos;
@@ -1835,6 +1850,16 @@ document.getElementById('frametest').src = "https://www.youtube.com/embed/vUE10r
   }else if (item ===53) {
      document.getElementById("work").innerHTML = work;
      document.getElementById('frametest').src = "https://www.youtube.com/embed/d5ks53uKi0U?rel=0"   ;
+     //document.getElementById("work").style.color = "red";
+    // document.getElementById("work").style.fontFamily= "Courier New";
+
+
+
+
+
+  }else if (item ===54) {
+     document.getElementById("work").innerHTML = work;
+     document.getElementById('frametest').src = "https://www.youtube.com/embed/aheVpYIXb2c?rel=0"   ;
      //document.getElementById("work").style.color = "red";
     // document.getElementById("work").style.fontFamily= "Courier New";
 
