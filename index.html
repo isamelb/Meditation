@@ -371,6 +371,9 @@ focus and facilitate learning'
 var rejection='In the video above I illustrate 4 mini meditations for delaing  \
 with rejection and regaining peace of mind'
 
+var pharmacy ='In this video above I revael the chemicals that get released in our bodies \
+as a result of the mini meditations I bring in other videos'
+
 
 var arabic_reality ='حاول أن تعيش في الواقع وليس في عالمك الشخصي ، شاهد الفيديو لمزيد من الشرح \
  '
@@ -506,6 +509,14 @@ var arabic_learning ='في الفديو اعلاه اكشف عن طرق تقني
 var arabic_rejection='في الفديو اعلااه اكشف عن اربع طرق للتعامل مع الرفض \
  \
 '
+
+var arabic_pharmacy='في الفديو اعلااه اكشف عن المخدرات الست الطبيعية التي يفرزها الجسم  \
+ \
+'
+
+
+
+
 function ChangeLanguage(){
 
 
@@ -563,7 +574,7 @@ function ChangeLanguage(){
 
 function arabic_random(){
 
-var items =range(1,30);
+var items =range(1,31);
 
 number_videos = items.length;
   document.getElementById("vnumber").innerHTML="number of videos available is: "+ number_videos;
@@ -780,6 +791,13 @@ if (item ===1){
           // document.getElementById("work").style.color = "red";
 
 
+  }else if (item===31){
+           document.getElementById("work").innerHTML = arabic_pharmacy
+           document.getElementById('frametest').src ="https://www.youtube.com/embed/U2usB7a0Yck?rel=0"    ;
+           //document.getElementById("work").style.fontFamily= "Courier New";
+          // document.getElementById("work").style.color = "red";
+
+
   }
 
 
@@ -991,12 +1009,20 @@ function arabic_submit(){
 
 
                     }else if (question.includes("الرفض")){
-                                   document.getElementById("work").innerHTML = arabic_rejection;
+                                  document.getElementById("work").innerHTML = arabic_rejection;
                                   document.getElementById('frametest').src = "https://www.youtube.com/embed/A-9y-yFEW7A?rel=0" ;
-                                           // document.getElementById("work").style.fontFamily= "Courier New";
-                                           // document.getElementById("work").style.color = "red";
-                                  "https://www.youtube.com/embed/A-9y-yFEW7A?rel=0"                            }
+                                   // document.getElementById("work").style.fontFamily= "Courier New";
+                                   // document.getElementById("work").style.color = "red";
+                             }
+                               else if (question.includes("المخدرات ")||(question.includes("الطبيعية"))){
+                                      document.getElementById("work").innerHTML = arabic_pharmacy;
+                                       document.getElementById('frametest').src = "https://www.youtube.com/embed/U2usB7a0Yck?rel=0" ;
+                                          // document.getElementById("work").style.fontFamily= "Courier New";
+                                          // document.getElementById("work").style.color = "red";
 
+
+
+                                                              }
   else {
     document.getElementById("work").innerHTML = "أنا أعمل على الإجابة عن المزيد من الأسئلة في المستقبل \
   "
@@ -1462,6 +1488,17 @@ function submitquestion(){
 
 
 
+}else if (question.includes("drug")|| (question.includes("bodily")) ||(question.includes("natural"))) {
+   document.getElementById("work").innerHTML = pharmacy;
+   document.getElementById('frametest').src = "https://www.youtube.com/embed/Ivo0sNLaHzs?rel=0";
+   //document.getElementById("work").style.color = "red";
+  // document.getElementById("work").style.fontFamily= "Courier New";
+
+
+
+
+
+
 }
 
 
@@ -1497,7 +1534,7 @@ function range(start, end) {
 
 function random_topic(){
 
-  var items =range(1,55);
+  var items =range(1,56);
 
   number_videos = items.length;
     document.getElementById("vnumber").innerHTML="number of videos available is: "+ number_videos;
@@ -1921,6 +1958,16 @@ document.getElementById('frametest').src = "https://www.youtube.com/embed/vUE10r
   }else if (item ===55) {
      document.getElementById("work").innerHTML = rejection;
      document.getElementById('frametest').src = "https://www.youtube.com/embed/Y5oppuD2Ae0?rel=0"  ;
+     //document.getElementById("work").style.color = "red";
+    // document.getElementById("work").style.fontFamily= "Courier New";
+
+
+
+
+
+  }else if (item ===56) {
+     document.getElementById("work").innerHTML = pharmacy;
+     document.getElementById('frametest').src ="https://www.youtube.com/embed/Ivo0sNLaHzs?rel=0" ;
      //document.getElementById("work").style.color = "red";
     // document.getElementById("work").style.fontFamily= "Courier New";
 
