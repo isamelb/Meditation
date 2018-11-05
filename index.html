@@ -395,6 +395,8 @@ var pharmacy ='In this video above I revael the chemicals that get released in o
 as a result of the mini meditations I bring in other videos'
 
 
+var depression ='In this video above I reveal 4 mini meditations to deal with depression'
+
 var arabic_reality ='حاول أن تعيش في الواقع وليس في عالمك الشخصي ، شاهد الفيديو لمزيد من الشرح \
  '
 
@@ -1519,6 +1521,17 @@ function submitquestion(){
 
 
 
+}else if (question.includes("depression")) {
+   document.getElementById("work").innerHTML = depression;
+   document.getElementById('frametest').src = "https://www.youtube.com/embed/k0cpQD9HAc4?rel=0"  ;
+   //document.getElementById("work").style.color = "red";
+  // document.getElementById("work").style.fontFamily= "Courier New";
+
+
+
+
+
+
 }
 
 
@@ -1554,7 +1567,7 @@ function range(start, end) {
 
 function random_topic(){
 
-  var items =range(1,56);
+  var items =range(1,57);
 
   number_videos = items.length;
     document.getElementById("vnumber").innerHTML="number of videos available is: "+ number_videos;
@@ -1988,6 +2001,16 @@ document.getElementById('frametest').src = "https://www.youtube.com/embed/vUE10r
   }else if (item ===56) {
      document.getElementById("work").innerHTML = pharmacy;
      document.getElementById('frametest').src ="https://www.youtube.com/embed/Ivo0sNLaHzs?rel=0" ;
+     //document.getElementById("work").style.color = "red";
+    // document.getElementById("work").style.fontFamily= "Courier New";
+
+
+
+
+
+  }else if (item ===57) {
+     document.getElementById("work").innerHTML = depression;
+     document.getElementById('frametest').src ="https://www.youtube.com/embed/k0cpQD9HAc4?rel=0"  ;
      //document.getElementById("work").style.color = "red";
     // document.getElementById("work").style.fontFamily= "Courier New";
 
