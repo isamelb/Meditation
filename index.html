@@ -397,6 +397,9 @@ as a result of the mini meditations I bring in other videos'
 
 var depression ='In this video above I reveal 4 mini meditations to deal with depression'
 
+var science ='You certainly do not need to belong to the church of science to do science. \
+Science can be practiced by anyone regardless, watch the video above for more'
+
 var arabic_reality ='حاول أن تعيش في الواقع وليس في عالمك الشخصي ، شاهد الفيديو لمزيد من الشرح \
  '
 
@@ -1532,6 +1535,17 @@ function submitquestion(){
 
 
 
+}else if (question.includes("science")) {
+   document.getElementById("work").innerHTML = science;
+   document.getElementById('frametest').src = "https://www.youtube.com/embed/3ML8wAMwYwg?rel=0"  ;
+   //document.getElementById("work").style.color = "red";
+  // document.getElementById("work").style.fontFamily= "Courier New";
+
+
+
+
+
+
 }
 
 
@@ -1567,7 +1581,7 @@ function range(start, end) {
 
 function random_topic(){
 
-  var items =range(1,57);
+  var items =range(1,58);
 
   number_videos = items.length;
     document.getElementById("vnumber").innerHTML="number of videos available is: "+ number_videos;
@@ -2011,6 +2025,16 @@ document.getElementById('frametest').src = "https://www.youtube.com/embed/vUE10r
   }else if (item ===57) {
      document.getElementById("work").innerHTML = depression;
      document.getElementById('frametest').src ="https://www.youtube.com/embed/k0cpQD9HAc4?rel=0"  ;
+     //document.getElementById("work").style.color = "red";
+    // document.getElementById("work").style.fontFamily= "Courier New";
+
+
+
+
+
+  }else if (item ===58) {
+     document.getElementById("work").innerHTML = science;
+     document.getElementById('frametest').src ="https://www.youtube.com/embed/3ML8wAMwYwg?rel=0" ;
      //document.getElementById("work").style.color = "red";
     // document.getElementById("work").style.fontFamily= "Courier New";
 
