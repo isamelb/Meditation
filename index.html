@@ -540,7 +540,9 @@ var arabic_pharmacy='في الفديو اعلااه اكشف عن المخدرا
 '
 
 
-
+var arabic_science='في هاذا الفديو اعلاه اشرح الطريقة العلمية و احض العرب و المسلمون ان يخترعون  \
+ \
+'
 
 function ChangeLanguage(){
 
@@ -599,7 +601,7 @@ function ChangeLanguage(){
 
 function arabic_random(){
 
-var items =range(1,31);
+var items =range(1,32);
 
 number_videos = items.length;
   document.getElementById("vnumber").innerHTML="number of videos available is: "+ number_videos;
@@ -819,6 +821,13 @@ if (item ===1){
   }else if (item===31){
            document.getElementById("work").innerHTML = arabic_pharmacy
            document.getElementById('frametest').src ="https://www.youtube.com/embed/U2usB7a0Yck?rel=0"    ;
+           //document.getElementById("work").style.fontFamily= "Courier New";
+          // document.getElementById("work").style.color = "red";
+
+
+  }else if (item===32){
+           document.getElementById("work").innerHTML = arabic_science
+           document.getElementById('frametest').src ="https://www.youtube.com/embed/DoIcIFFIf-Q?rel=0"   ;
            //document.getElementById("work").style.fontFamily= "Courier New";
           // document.getElementById("work").style.color = "red";
 
@@ -1048,6 +1057,15 @@ function arabic_submit(){
 
 
                                                               }
+                                  else if (question.includes("العلم")){
+                                               document.getElementById("work").innerHTML = arabic_science;
+                                              document.getElementById('frametest').src = "https://www.youtube.com/embed/DoIcIFFIf-Q?rel=0" ;
+                                               // document.getElementById("work").style.fontFamily= "Courier New";
+                                               // document.getElementById("work").style.color = "red";
+
+
+
+                                                                                             }
   else {
     document.getElementById("work").innerHTML = "أنا أعمل على الإجابة عن المزيد من الأسئلة في المستقبل \
   "
