@@ -547,6 +547,12 @@ var arabic_science='في هاذا الفديو اعلاه اشرح الطريق�
  \
 '
 
+var arabic_patience='في الفديو اعلاه اكشف عن طريقة بصيطة للمزيد من قوة الصبر \
+ \
+'
+
+
+
 function ChangeLanguage(){
 
 
@@ -604,7 +610,7 @@ function ChangeLanguage(){
 
 function arabic_random(){
 
-var items =range(1,32);
+var items =range(1,33);
 
 number_videos = items.length;
   document.getElementById("vnumber").innerHTML="number of videos available is: "+ number_videos;
@@ -835,6 +841,13 @@ if (item ===1){
           // document.getElementById("work").style.color = "red";
 
 
+  }else if (item===33){
+           document.getElementById("work").innerHTML = arabic_patience
+           document.getElementById('frametest').src ="https://www.youtube.com/embed/xV7GEGLKQRs?rel=0"  ;
+           //document.getElementById("work").style.fontFamily= "Courier New";
+          // document.getElementById("work").style.color = "red";
+
+
   }
 
 
@@ -1060,15 +1073,16 @@ function arabic_submit(){
 
 
                                                               }
-                                  else if (question.includes("العلم")){
-                                               document.getElementById("work").innerHTML = arabic_science;
-                                              document.getElementById('frametest').src = "https://www.youtube.com/embed/DoIcIFFIf-Q?rel=0" ;
+
+                                else if (question.includes("الصبر")||(question.includes("صبر"))){
+                                                 document.getElementById("work").innerHTML = arabic_patience;
+                                                document.getElementById('frametest').src = "https://www.youtube.com/embed/xV7GEGLKQRs?rel=0" ;
                                                // document.getElementById("work").style.fontFamily= "Courier New";
                                                // document.getElementById("work").style.color = "red";
 
 
 
-                                                                                             }
+                                                                                                   }
   else {
     document.getElementById("work").innerHTML = "أنا أعمل على الإجابة عن المزيد من الأسئلة في المستقبل \
   "
