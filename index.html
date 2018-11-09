@@ -400,6 +400,9 @@ var depression ='In this video above I reveal 4 mini meditations to deal with de
 var science ='You certainly do not need to belong to the church of science to do science. \
 Science can be practiced by anyone regardless, watch the video above for more'
 
+var patience='In the video above I show a simple method to develop the  \
+muscle of patience'
+
 var arabic_reality ='حاول أن تعيش في الواقع وليس في عالمك الشخصي ، شاهد الفيديو لمزيد من الشرح \
  '
 
@@ -1564,6 +1567,17 @@ function submitquestion(){
 
 
 
+}else if (question.includes("patience")) {
+   document.getElementById("work").innerHTML = patience;
+   document.getElementById('frametest').src = "https://www.youtube.com/embed/s_MxeS5YrX8?rel=0"  ;
+   //document.getElementById("work").style.color = "red";
+  // document.getElementById("work").style.fontFamily= "Courier New";
+
+
+
+
+
+
 }
 
 
@@ -1599,7 +1613,7 @@ function range(start, end) {
 
 function random_topic(){
 
-  var items =range(1,58);
+  var items =range(1,59);
 
   number_videos = items.length;
     document.getElementById("vnumber").innerHTML="number of videos available is: "+ number_videos;
@@ -2053,6 +2067,16 @@ document.getElementById('frametest').src = "https://www.youtube.com/embed/vUE10r
   }else if (item ===58) {
      document.getElementById("work").innerHTML = science;
      document.getElementById('frametest').src ="https://www.youtube.com/embed/3ML8wAMwYwg?rel=0" ;
+     //document.getElementById("work").style.color = "red";
+    // document.getElementById("work").style.fontFamily= "Courier New";
+
+
+
+
+
+  }else if (item ===59) {
+     document.getElementById("work").innerHTML = patience;
+     document.getElementById('frametest').src ="https://www.youtube.com/embed/s_MxeS5YrX8?rel=0" ;
      //document.getElementById("work").style.color = "red";
     // document.getElementById("work").style.fontFamily= "Courier New";
 
