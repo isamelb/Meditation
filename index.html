@@ -553,6 +553,10 @@ var arabic_patience='في الفديو اعلاه اكشف عن طريقة بص�
  \
 '
 
+var arabic_nature='عل تعلم ان الطبيعة تساعد على الشفاء من جمييع المراض \
+الفديو اعلاه يفسر كيف \
+ \
+'
 
 
 function ChangeLanguage(){
@@ -612,7 +616,7 @@ function ChangeLanguage(){
 
 function arabic_random(){
 
-var items =range(1,33);
+var items =range(1,34);
 
 number_videos = items.length;
   document.getElementById("vnumber").innerHTML="number of videos available is: "+ number_videos;
@@ -850,6 +854,13 @@ if (item ===1){
           // document.getElementById("work").style.color = "red";
 
 
+  }else if (item===34){
+           document.getElementById("work").innerHTML = arabic_nature
+           document.getElementById('frametest').src ="https://www.youtube.com/embed/xV7GEGLKQRs?rel=0"  ;
+           //document.getElementById("work").style.fontFamily= "Courier New";
+          // document.getElementById("work").style.color = "red";
+
+
   }
 
 
@@ -1066,23 +1077,28 @@ function arabic_submit(){
                                    // document.getElementById("work").style.fontFamily= "Courier New";
                                    // document.getElementById("work").style.color = "red";
                              }
-                               else if (question.includes("المخدرات ")||(question.includes("الطبيعية"))){
-                                      document.getElementById("work").innerHTML = arabic_pharmacy;
-                                       document.getElementById('frametest').src = "https://www.youtube.com/embed/U2usB7a0Yck?rel=0" ;
-                                          // document.getElementById("work").style.fontFamily= "Courier New";
-                                          // document.getElementById("work").style.color = "red";
+                     else if (question.includes("المخدرات ")||(question.includes("الطبيعية"))){
+                            document.getElementById("work").innerHTML = arabic_pharmacy;
+                             document.getElementById('frametest').src = "https://www.youtube.com/embed/U2usB7a0Yck?rel=0" ;
+                                // document.getElementById("work").style.fontFamily= "Courier New";
+                                // document.getElementById("work").style.color = "red";
 
 
 
                                                               }
 
-                                else if (question.includes("الصبر")||(question.includes("صبر"))){
-                                                 document.getElementById("work").innerHTML = arabic_patience;
-                                                document.getElementById('frametest').src = "https://www.youtube.com/embed/xV7GEGLKQRs?rel=0" ;
-                                               // document.getElementById("work").style.fontFamily= "Courier New";
-                                               // document.getElementById("work").style.color = "red";
+                      else if (question.includes("الصبر")||(question.includes("صبر"))){
+                                       document.getElementById("work").innerHTML = arabic_patience;
+                                      document.getElementById('frametest').src = "https://www.youtube.com/embed/xV7GEGLKQRs?rel=0" ;
+                                     // document.getElementById("work").style.fontFamily= "Courier New";
+                                     // document.getElementById("work").style.color = "red";
+}
 
-
+                   else if (question.includes("الطبيعة")||(question.includes("طبيعة"))){
+                                    document.getElementById("work").innerHTML = arabic_nature;
+                                   document.getElementById('frametest').src = "https://www.youtube.com/embed/xV7GEGLKQRs?rel=0" ;
+                                  // document.getElementById("work").style.fontFamily= "Courier New";
+                                  // document.getElementById("work").style.color = "red";
 
                                                                                                    }
   else {
