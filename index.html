@@ -1,7 +1,27 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-
+    <SCRIPT>
+    function passWord() {
+    var testV = 1;
+    var pass1 = prompt('Please Enter Your Password',' ');
+    while (testV < 3) {
+    if (!pass1)
+    history.go(-1);
+    if (pass1.toLowerCase() == "letmein") {
+    alert('You Got it Right!');
+    window.open('https://isamelb.github.io/book/');
+    break;
+    }
+    testV+=1;
+    var pass1 =
+    prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
+    }
+    if (pass1.toLowerCase()!="password" & testV ==3)
+    history.go(-1);
+    return " ";
+    }
+    </SCRIPT>
     <p><h2>The autumn is here, soon the winter, beat the winter blues by guiding your emotions to happiness, get the book</h2></p>
     <a id ="blink"  href="https://www.amazon.co.uk/dp/B07JH5N8WL">
                            <img border="0" alt="theory" src="./laws.jpeg" width="100" height="150">
@@ -19,7 +39,11 @@
 <input type="image" src="https://www.paypalobjects.com/en_US/GB/i/btn/btn_subscribeCC_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
 <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
 </form>
-
+<CENTER>
+<FORM>
+<input type="button" value="Enter Protected Area" onClick="passWord()">
+</FORM>
+</CENTER>
    <style media="screen">
    img {
 width: auto ;
