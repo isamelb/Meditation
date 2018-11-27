@@ -8,6 +8,9 @@
     function go_telegram(){
         window.open('https://t.me/mindtaxis');
     }
+    function go_free_ebook(){
+      document.getElementById('form').style.visibility = "visible";
+    }
     </script>
 
 
@@ -163,6 +166,7 @@ body {
 <p>For additional questions you can ask me on my telegram channel here  <input type="button" value="Go to telegram" class="button button1" onClick="go_telegram()">
   <!<a  href = 'https://t.me/mindtaxis'>    <!mindtaxis</a>
 </p>
+<input type="button" value="Get a free ebook" class="button button1" onClick="go_free_ebook()">
     <p id ="sponsor">
       <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
       <input type="hidden" name="cmd" value="_s-xclick" />
@@ -177,7 +181,7 @@ body {
 
         <p id ="vnumber"> </p>
         <p id="medical"> Please seek medical help if you have thoughts of self harm, this advice is meant as an extra support</P>
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScqSoQkK20UlVHcBayTzpnYr8H8PzmssldOOTqmz6vNLt3MjQ/viewform?embedded=true" width="400" height="400" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+<iframe id ="form"src="https://docs.google.com/forms/d/e/1FAIpQLScqSoQkK20UlVHcBayTzpnYr8H8PzmssldOOTqmz6vNLt3MjQ/viewform?embedded=true" style="visibility: hidden;" width="400" height="400" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
 </div>
 <script type="text/javascript">
 
