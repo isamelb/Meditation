@@ -91,8 +91,17 @@ body {
 .button2 {border-radius: 6px;}
 .button3 {border-radius: 6px;}
 
+@media only screen and (max-width: 760px) {
+.video-container {width:500 height:230}
 
-
+.video-container iframe, .video-container object, .video-container embed
+{ width:500  height:230 }
+}
+@media only screen and (max-width: 480px) {
+.video-container {width:400  height:210}
+.video-container iframe, .video-container object, .video-container embed
+{ width:400  height:210 }
+}
 
 
 
