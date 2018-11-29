@@ -91,32 +91,19 @@ body {
 .button2 {border-radius: 6px;}
 .button3 {border-radius: 6px;}
 
-/* Style for Extra Large Screen */
-@media (max-width:1199px) {
-    iframe {
-        height: 292px;
-    }
-}
+.responsive{
 
-/* Style for Large Screen */
-@media (max-width:991px) {
-    iframe {
-        height: 292px;
-    }
-}
+width: 100%;
+height:0;
+padding-bottom: 56.25%;
+position: relative;
 
-/* Style for Medium Screen */
-@media (max-width:767px) {
-    iframe {
-        height: 180px;
-    }
 }
+.frametest{
+position: absolute;
+width: : 100%;
+height: 100%;
 
-/* Style for Small Screen */
-@media (max-width:400px) {
-    iframe {
-        height: 200px;
-    }
 }
 
 
@@ -124,16 +111,16 @@ body {
   </style>
 
 
-        <div class="video-container"   style ="text-align: center"  id="content">
-
-        <!<img id= "optionalstuff" src="./rose.jpeg" align="right" class="ribbon" alt="Hi"/>
-
-        <iframe id = "frametest"  width="500" height="240" src=  "https://www.youtube.com/embed/kUmren2c0yc?rel=0"  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-      <!"https://www.youtube.com/embed/gj5xpttuXuI?rel=0  "
+        <div class="responsive"   style ="text-align: center"  id="content">
 
 
 
-        <!<img src="./rose.jpeg" align="left" class="ribbon" alt="Hi"/>
+        <iframe id = "frametest"  width="400" height="210" src=  "https://www.youtube.com/embed/kUmren2c0yc?rel=0"  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+
+
+
+
 
          <div id ="love_matters" style="color:red;" style ="text-align: center">love is what really matters</div>
 
