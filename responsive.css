@@ -1,0 +1,27 @@
+/* Style for Extra Large Screen */
+@media (max-width:1199px) {
+    iframe {
+        height: 292px;
+    }
+}
+
+/* Style for Large Screen */
+@media (max-width:991px) {
+    iframe {
+        height: 292px;
+    }
+}
+
+/* Style for Medium Screen */
+@media (max-width:767px) {
+    iframe {
+        height: 180px;
+    }
+}
+
+/* Style for Small Screen */
+@media (max-width:400px) {
+    iframe {
+        height: 200px;
+    }
+}
