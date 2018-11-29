@@ -91,16 +91,32 @@ body {
 .button2 {border-radius: 6px;}
 .button3 {border-radius: 6px;}
 
-@media only screen and (max-width: 760px) {
-.video-container {width:500 height:230}
-
-.video-container iframe, .video-container object, .video-container embed
-{ width:500  height:230 }
+/* Style for Extra Large Screen */
+@media (max-width:1199px) {
+    iframe {
+        height: 292px;
+    }
 }
-@media only screen and (max-width: 480px) {
-.video-container {width:400  height:210}
-.video-container iframe, .video-container object, .video-container embed
-{ width:400  height:210 }
+
+/* Style for Large Screen */
+@media (max-width:991px) {
+    iframe {
+        height: 292px;
+    }
+}
+
+/* Style for Medium Screen */
+@media (max-width:767px) {
+    iframe {
+        height: 180px;
+    }
+}
+
+/* Style for Small Screen */
+@media (max-width:575px) {
+    iframe {
+        height: 200px;
+    }
 }
 
 
