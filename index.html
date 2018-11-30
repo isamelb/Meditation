@@ -151,7 +151,7 @@
 
     <button id ="rtopic" onclick = "random_topic()"  class="button button1">Random topic</button>
     <button id ="mbutton" onclick="ChangeLanguage()" class="button button3" >العربية المغربية</button>
-     <input type="button" value="Make a similar app" class="button button1" onClick="go_videos()">
+     <input id="simila_app" type="button" value="Make a similar app" class="button button1" onClick="go_videos()">
       <p id = "work"> <font face = "arial" > Hi, the ebooks below talks more about how to enhance wellbeing</font></p>
 
 
@@ -642,7 +642,7 @@ function ChangeLanguage(){
     document.getElementById("medical").innerHTML=""
     document.getElementById("vnumber").innerHTML=""
   //  document.getElementById("paper").innerHTML=""
-  //document.getElementById("paper").style.visibility = "hidden";
+  document.getElementById("simila_app").style.visibility = "hidden";
     document.getElementById("sponsor").innerHTML="شكرا على انتباهكم"
     document.getElementById('rtopic').setAttribute( "onclick", "javascript: arabic_random();" );
     document.getElementById('submit_ques').setAttribute( "onclick", "javascript: arabic_submit();" );
