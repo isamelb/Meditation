@@ -451,6 +451,9 @@ and their link to black magic'
 
 var reasons ='In the video above I explain the reasons why I made this web app available publicly'
 
+var massage ='In the video above I explain how important is full body awarness \
+and I show techniques to massage your scalp'
+
 var arabic_reality ='حاول أن تعيش في الواقع وليس في عالمك الشخصي ، شاهد الفيديو لمزيد من الشرح \
  '
 
@@ -1773,6 +1776,17 @@ function submitquestion(){
 
 
 
+}else if (question.includes("massage")||(question.includes("scalp"))) {
+   document.getElementById("work").innerHTML = massage;
+   document.getElementById('frametest').src = "https://www.youtube.com/embed/RnzUuOjJeww?rel=0" ;
+   //document.getElementById("work").style.color = "red";
+  // document.getElementById("work").style.fontFamily= "Courier New";
+
+
+
+
+
+
 }
 
 
@@ -1809,7 +1823,7 @@ function range(start, end) {
 
 function random_topic(){
 
-  var items =range(1,64);
+  var items =range(1,65);
 
   number_videos = items.length;
     document.getElementById("vnumber").innerHTML="number of videos available is: "+ number_videos;
@@ -2323,6 +2337,16 @@ document.getElementById('frametest').src = "https://www.youtube.com/embed/vUE10r
   }else if (item ===64) {
      document.getElementById("work").innerHTML = reasons;
      document.getElementById('frametest').src ="https://www.youtube.com/embed/m0XbuVZRc3M?rel=0" ;
+     //document.getElementById("work").style.color = "red";
+    // document.getElementById("work").style.fontFamily= "Courier New";
+
+
+
+
+
+  }else if (item ===65) {
+     document.getElementById("work").innerHTML = massage;
+     document.getElementById('frametest').src ="https://www.youtube.com/embed/RnzUuOjJeww?rel=0" ;
      //document.getElementById("work").style.color = "red";
     // document.getElementById("work").style.fontFamily= "Courier New";
 
