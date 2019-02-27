@@ -1450,7 +1450,7 @@ function submitquestion(){
 //  document.getElementById("work").style.fontFamily= "Courier New";
 
 
-}else if (question.includes("friendly")&& question.includes('friendliness')){
+}else if (question.includes("friendly") || question.includes('friendliness')){
   document.getElementById("work").innerHTML = friendliness;
   document.getElementById('frametest').src = "https://www.youtube.com/embed/PDSjuGUGdrk?rel=0" ;
   //document.getElementById("work").style.color = "red";
