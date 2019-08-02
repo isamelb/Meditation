@@ -17,9 +17,10 @@
       
     function go_talktome(){
       window.open('https://isamelb.github.io/talktome/');
+      navigator.vibrate(100);
       var audio = new Audio("well done 3.aac");
       audio.play();
-      navigator.vibrate(100);
+      
   }
 
     function go_free_ebook(){
@@ -638,6 +639,7 @@ var arabic_placebo='في الفديو اعلاه اربط بين التاتير 
 
 
 function ChangeLanguage(){
+  navigator.vibrate(100);
 
 
   if (document.getElementById("mbutton").innerHTML=="العربية المغربية"){
