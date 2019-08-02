@@ -1247,6 +1247,7 @@ function arabic_submit(){
 function submitquestion(){
   var quest= document.getElementById("mytext").value;
   question = quest.toLowerCase();
+  navigator.vibrate(100);
 
   if (question.includes("work")){
     document.getElementById("work").innerHTML = dont_work;
