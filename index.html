@@ -6,6 +6,7 @@
     <script type="text/javascript">
     function go_videos(){
         window.open('https://www.youtube.com/playlist?list=PL-ZKQM9AcjMGeW6dWC1G0oJbtPmcckZPj');
+        navigator.vibrate(100);
 
     }
     function go_telegram(){
@@ -1244,6 +1245,7 @@ function arabic_submit(){
 
 
 function submitquestion(){
+  navigator.vibrate(100);
   var quest= document.getElementById("mytext").value;
   question = quest.toLowerCase();
 
@@ -2280,10 +2282,12 @@ document.getElementById('frametest').src = "https://www.youtube.com/embed/vUE10r
     }
     function go_telegram(){
         window.open('https://t.me/mindtaxis');
+        navigator.vibrate(100);
     }
       
     function go_talktome(){
       window.open('https://isamelb.github.io/talktome/');
+      navigator.vibrate(100);
   }
 
     function go_free_ebook(){
